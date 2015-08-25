@@ -1,0 +1,4 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "5b1f1ed422c8b270b69fd8c06afb345f"
+inputs: 
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashiTests/PhotoGurashiTests.swift"

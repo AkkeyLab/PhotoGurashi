@@ -1,0 +1,7 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "fa69d26e646405f06177aedf976910bf"
+inputs: 
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YukiViewController.swift"
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift"
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ModalViewController.swift"
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/AppDelegate.swift"
