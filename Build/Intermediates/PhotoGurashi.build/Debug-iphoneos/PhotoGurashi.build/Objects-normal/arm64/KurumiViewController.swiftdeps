@@ -4,23 +4,23 @@ provides:
 nominals:
 - "C12PhotoGurashi20KurumiViewController"
 class-members:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 top-level:
-- "NSBundle"
-- "String"
+- !private "UIImage"
+- "NSCoder"
 - !private "StringLiteralType"
 - "CommonViewController"
-- "NSCoder"
-- !private "UIImage"
+- "NSBundle"
+- "String"
 member-access:
 - !private "CSo7UIImage"
-- "CSo11UIResponder"
-- "CSo8NSObject"
 - "C12PhotoGurashi20KurumiViewController"
+- "CSo11UIResponder"
 - "CSo16UIViewController"
-- "C12PhotoGurashi20CommonViewController"
 - "PSs9AnyObject"
+- "C12PhotoGurashi20CommonViewController"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Swift.swiftmodule"

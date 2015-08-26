@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         //yyyy/MM/dd HH:mm:ss -> 2014/06/25 02:13:18
         dateFormatter.dateFormat = "HH"
         if(dateFormatter.stringFromDate(now) == "00"){
-            topImage = UIImage(named: "topImage_darkness.jpg")!
+            topImage = UIImage(named: "image/topImage_darkness.jpg")!
         }else{
             topImage = UIImage(named: "image/topImage.jpg")!
         }

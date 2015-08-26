@@ -4,11 +4,19 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		LXz3JH70z5US9lmuzSEtn51Kmjo=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		EIgMlVgwMgMJeZzMeahgfvS5MRo=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			01XQMZTzHwCL+5joAntb6ZQCdf8=
+			niwVNKj7W5nEaHU6w9X7u4QY/7A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,7 +25,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kFAye12YH4KzEtFruwIhFGtSjiU=
+			YmBGsIhDCGYl50st654fLCiOLgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,54 +43,54 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			poHMtwAYNOUuIEFhisqyOsGcanU=
+			Ht1tzD4JtzDL0FOGzJs8SIkveq0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		bKnlOPcVXAX536yFlobPbu0NCw8=
+		zV5K8qufc78OS0+tSTMwPvekK0o=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		UxDVrmq/8RlEfh+U5UP4LXmhRVw=
+		Wpi/OMuMRKB2eNL5oJ+/KDWmff8=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		a+nCVgsCv/T3fMG9PLY7LXoQmVk=
+		U8smjhzGlruVEri5U8bHhf+7JMk=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		dBPdS7KufwLqn6aTVihF7y9r0r4=
+		YzG7Y/bEDY3f/evjOzaWEjriXoQ=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		n0dOL2b6gI/g/uvHSCb/2xJbcMU=
+		Zyqq+I3HGP4IoP29wZokbOXwgiA=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		PdvoAXcKM32OIONNJzwaloAnjiM=
+		P8S/B4pA48PGJ+jmHoRub8o0sMA=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		chtwsDN2EIrii9FoAhtFctiPPrs=
+		i4vEJ91vRzbv/QrVsmSWfLKXFNE=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		u1O7SeKlZAq3WdA0o550UIJFgK0=
+		tyBLHoX1TbZ2sd4PpPFLSXAkBp8=
 		</data>
 		<key>Frameworks/libswiftSecurity.dylib</key>
 		<data>
-		63qTrF4cln0xt+ZIgYyCcjq5sJI=
+		SaEreGg0LuU1zwgFeRFd/EaXweY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		im5TXdLB+6Bl9msl7cKvrtLA0QQ=
+		1xDwmw8jdChFMUFIa39J9Re84Pg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		51me/SmosL/AG6bRPOmW8MnWLhI=
+		vscpvV+Pm4XNcBGcDvUrJsjEMmA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -90,7 +98,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		QEaONTyjbR068oBBigReeevDJvY=
+		Z37iHOKqevLEGicat/NR7h/KBjU=
 		</data>
 		<key>image/kurumi.png</key>
 		<data>
@@ -123,11 +131,19 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		LXz3JH70z5US9lmuzSEtn51Kmjo=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		EIgMlVgwMgMJeZzMeahgfvS5MRo=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			01XQMZTzHwCL+5joAntb6ZQCdf8=
+			niwVNKj7W5nEaHU6w9X7u4QY/7A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -136,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kFAye12YH4KzEtFruwIhFGtSjiU=
+			YmBGsIhDCGYl50st654fLCiOLgA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -154,54 +170,54 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			poHMtwAYNOUuIEFhisqyOsGcanU=
+			Ht1tzD4JtzDL0FOGzJs8SIkveq0=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		bKnlOPcVXAX536yFlobPbu0NCw8=
+		zV5K8qufc78OS0+tSTMwPvekK0o=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		UxDVrmq/8RlEfh+U5UP4LXmhRVw=
+		Wpi/OMuMRKB2eNL5oJ+/KDWmff8=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		a+nCVgsCv/T3fMG9PLY7LXoQmVk=
+		U8smjhzGlruVEri5U8bHhf+7JMk=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		dBPdS7KufwLqn6aTVihF7y9r0r4=
+		YzG7Y/bEDY3f/evjOzaWEjriXoQ=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		n0dOL2b6gI/g/uvHSCb/2xJbcMU=
+		Zyqq+I3HGP4IoP29wZokbOXwgiA=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		PdvoAXcKM32OIONNJzwaloAnjiM=
+		P8S/B4pA48PGJ+jmHoRub8o0sMA=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		chtwsDN2EIrii9FoAhtFctiPPrs=
+		i4vEJ91vRzbv/QrVsmSWfLKXFNE=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		u1O7SeKlZAq3WdA0o550UIJFgK0=
+		tyBLHoX1TbZ2sd4PpPFLSXAkBp8=
 		</data>
 		<key>Frameworks/libswiftSecurity.dylib</key>
 		<data>
-		63qTrF4cln0xt+ZIgYyCcjq5sJI=
+		SaEreGg0LuU1zwgFeRFd/EaXweY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		im5TXdLB+6Bl9msl7cKvrtLA0QQ=
+		1xDwmw8jdChFMUFIa39J9Re84Pg=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		QEaONTyjbR068oBBigReeevDJvY=
+		Z37iHOKqevLEGicat/NR7h/KBjU=
 		</data>
 		<key>image/kurumi.png</key>
 		<data>

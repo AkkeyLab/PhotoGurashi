@@ -4,23 +4,23 @@ provides:
 nominals:
 - "C12PhotoGurashi18YukiViewController"
 class-members:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 top-level:
-- !private "UIImage"
 - "NSCoder"
-- "CommonViewController"
+- !private "UIImage"
 - !private "StringLiteralType"
-- "NSBundle"
 - "String"
+- "CommonViewController"
+- "NSBundle"
 member-access:
-- "CSo8NSObject"
+- "C12PhotoGurashi20CommonViewController"
 - !private "CSo7UIImage"
+- "CSo11UIResponder"
 - "CSo16UIViewController"
 - "PSs9AnyObject"
-- "C12PhotoGurashi20CommonViewController"
 - "C12PhotoGurashi18YukiViewController"
-- "CSo11UIResponder"
+- "CSo8NSObject"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

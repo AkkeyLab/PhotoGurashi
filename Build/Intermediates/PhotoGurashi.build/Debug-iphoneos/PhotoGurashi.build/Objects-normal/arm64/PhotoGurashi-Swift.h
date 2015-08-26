@@ -160,6 +160,7 @@ SWIFT_CLASS("_TtC12PhotoGurashi14ViewController")
 @property (nonatomic, readonly) UIButton * __nonnull kurumiButton;
 @property (nonatomic, readonly) UIButton * __nonnull yuuriButton;
 @property (nonatomic, readonly) UIButton * __nonnull mikiButton;
+@property (nonatomic) UIImage * __nonnull topImage;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __null_unspecified)sender;
 - (void)didReceiveMemoryWarning;
