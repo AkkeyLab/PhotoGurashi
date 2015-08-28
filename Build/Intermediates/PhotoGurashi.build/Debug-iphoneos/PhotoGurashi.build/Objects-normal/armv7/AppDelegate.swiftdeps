@@ -4,27 +4,27 @@ provides:
 nominals:
 - "C12PhotoGurashi11AppDelegate"
 class-members:
-- "applicationWillResignActive"
-- "applicationWillTerminate"
-- "window"
 - "applicationDidBecomeActive"
-- "application"
+- "applicationWillResignActive"
 - "applicationWillEnterForeground"
+- "window"
+- "applicationWillTerminate"
 - "applicationDidEnterBackground"
+- "application"
 top-level:
-- "UIApplication"
 - "UIWindow"
-- !private "BooleanLiteralType"
+- "UIApplication"
+- "NSObject"
 - "UIApplicationDelegate"
 - "Bool"
-- "AnyObject"
 - "UIResponder"
-- "NSObject"
+- "AnyObject"
+- !private "BooleanLiteralType"
 member-access:
 - "C12PhotoGurashi11AppDelegate"
+- "PSo21UIApplicationDelegate"
 - "CSo8NSObject"
 - "PSs9AnyObject"
-- "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 dynamic-lookup:
 cross-module:

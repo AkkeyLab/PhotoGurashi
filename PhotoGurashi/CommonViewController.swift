@@ -18,6 +18,7 @@ class CommonViewController: UIViewController {
     var myImageOutput:        AVCaptureStillImageOutput!
     let cameraButton:         UIButton = UIButton()
     let exitButton:           UIButton = UIButton()
+    let changeCameraButton:   UIButton = UIButton()
     var provisionalImageView: UIImageView!
     var provisionalImage:     UIImage = UIImage(named: "image/yuki.png")!
     //Take a picture
@@ -50,28 +51,8 @@ class CommonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mySession = AVCaptureSession()
-        
-        let devices = AVCaptureDevice.devices()//Add all devices
-        for device in devices{//Select back camera
-            if(device.position == AVCaptureDevicePosition.Back){
-                myDevice = device as! AVCaptureDevice
-            }
-        }
-        
-        let videoInput = AVCaptureDeviceInput.deviceInputWithDevice(myDevice, error: nil) as! AVCaptureDeviceInput
-        mySession.addInput(videoInput)
-        
-        myImageOutput = AVCaptureStillImageOutput()
-        mySession.addOutput(myImageOutput)
-        
-        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as! AVCaptureVideoPreviewLayer
-        myVideoLayer.frame = self.view.bounds
-        myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        //Add View
-        self.view.layer.addSublayer(myVideoLayer)
-        
-        mySession.startRunning()
+        //Camera
+        cameraSetting()
         
         //Add provisional Image
         provisionalImageView = UIImageView(frame: CGRectMake(0, 0, (self.view.bounds.width  / 2) + (self.view.bounds.width  / 4),
@@ -108,6 +89,19 @@ class CommonViewController: UIViewController {
         exitButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
         exitButton.tag = 1
         self.view.addSubview(exitButton)
+        
+        //ex) let changeCameraButton = UIButton(frame: CGRectMake(0,0,80,80))
+        changeCameraButton.frame = CGRectMake(0, 0, 50, 50)//size
+        changeCameraButton.backgroundColor = UIColor.cyanColor()
+        changeCameraButton.layer.masksToBounds = true
+        changeCameraButton.setTitle("変更", forState: .Normal)
+        changeCameraButton.titleLabel?.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
+        changeCameraButton.setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
+        changeCameraButton.layer.cornerRadius = 10.0//edge
+        changeCameraButton.layer.position = CGPoint(x: self.view.bounds.width - 50, y: 50)
+        changeCameraButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        changeCameraButton.tag = 2
+        self.view.addSubview(changeCameraButton)
     }
     
     //Button event
@@ -120,10 +114,42 @@ class CommonViewController: UIViewController {
         case 1:
             //Lets exit
             self.dismissViewControllerAnimated(true, completion: nil)
+        case 2:
+            changeSetting()
         default:
             print("ERROR")
         }
         
+    }
+    
+    func changeSetting(){
+        //We want to add in the inheritance destination.
+    }
+    
+    func cameraSetting(){
+        
+        mySession = AVCaptureSession()
+        
+        let devices = AVCaptureDevice.devices()//Add all devices
+        for device in devices{//Select back camera
+            if(device.position == AVCaptureDevicePosition.Back){
+                myDevice = device as! AVCaptureDevice
+            }
+        }
+        
+        let videoInput = AVCaptureDeviceInput.deviceInputWithDevice(myDevice, error: nil) as! AVCaptureDeviceInput
+        mySession.addInput(videoInput)
+        
+        myImageOutput = AVCaptureStillImageOutput()
+        mySession.addOutput(myImageOutput)
+        
+        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as! AVCaptureVideoPreviewLayer
+        myVideoLayer.frame = self.view.bounds
+        myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        //Add View
+        self.view.layer.addSublayer(myVideoLayer)
+
+        mySession.startRunning()
     }
     
     func outputImage(){

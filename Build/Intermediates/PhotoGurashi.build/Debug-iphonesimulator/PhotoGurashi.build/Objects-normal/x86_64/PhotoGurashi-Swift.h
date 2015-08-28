@@ -104,49 +104,89 @@ SWIFT_CLASS("_TtC12PhotoGurashi11AppDelegate")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVCaptureSession;
+@class AVCaptureDevice;
+@class AVCaptureStillImageOutput;
 @class UIButton;
+@class UIImageView;
+@class UIImage;
+@class CIImage;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC12PhotoGurashi19ModalViewController")
-@interface ModalViewController : UIViewController
+SWIFT_CLASS("_TtC12PhotoGurashi20CommonViewController")
+@interface CommonViewController : UIViewController
+@property (nonatomic) AVCaptureSession * __null_unspecified mySession;
+@property (nonatomic) AVCaptureDevice * __null_unspecified myDevice;
+@property (nonatomic) AVCaptureStillImageOutput * __null_unspecified myImageOutput;
+@property (nonatomic, readonly) UIButton * __nonnull cameraButton;
+@property (nonatomic, readonly) UIButton * __nonnull exitButton;
+@property (nonatomic) UIImageView * __null_unspecified provisionalImageView;
+@property (nonatomic) UIImage * __nonnull provisionalImage;
+@property (nonatomic) CIImage * __null_unspecified takeInputImage;
+- (void)changeImage:(UIImage * __nonnull)image;
 - (void)viewDidLoad;
-- (void)respondToButtonClick:(UIButton * __null_unspecified)sender;
+- (void)onClickButton:(UIButton * __nonnull)sender;
+- (void)outputImage;
 - (void)didReceiveMemoryWarning;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi20KurumiViewController")
+@interface KurumiViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi18MikiViewController")
+@interface MikiViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 @end
 
 
 SWIFT_CLASS("_TtC12PhotoGurashi14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, readonly) UIButton * __nonnull yukiButton;
+@property (nonatomic, readonly) UIButton * __nonnull kurumiButton;
+@property (nonatomic, readonly) UIButton * __nonnull yuuriButton;
+@property (nonatomic, readonly) UIButton * __nonnull mikiButton;
+@property (nonatomic) UIImage * __nonnull topImage;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __null_unspecified)sender;
 - (void)didReceiveMemoryWarning;
+- (BOOL)timeBoolean:(uint8_t)startTime goalTime:(uint8_t)goalTime;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class AVCaptureSession;
-@class AVCaptureDevice;
-@class AVCaptureStillImageOutput;
-@class CIImage;
-@class UIImage;
 
 SWIFT_CLASS("_TtC12PhotoGurashi18YukiViewController")
-@interface YukiViewController : UIViewController
-@property (nonatomic) AVCaptureSession * __null_unspecified mySession;
-@property (nonatomic) AVCaptureDevice * __null_unspecified myDevice;
-@property (nonatomic) AVCaptureStillImageOutput * __null_unspecified myImageOutput;
-@property (nonatomic, readonly) UIButton * __nonnull CameraButton;
-@property (nonatomic) CIImage * __null_unspecified takeInputImage;
-@property (nonatomic) UIImage * __null_unspecified yukiInputImage;
-- (void)viewDidLoad;
-- (void)onClickMyButton:(UIButton * __nonnull)sender;
-- (void)didReceiveMemoryWarning;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+@interface YukiViewController : CommonViewController
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi19YuuriViewController")
+@interface YuuriViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 @end
 
 #pragma clang diagnostic pop

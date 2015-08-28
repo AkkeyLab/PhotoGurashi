@@ -20,13 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Get the current date and time
-        let now = NSDate()
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.locale = NSLocale(localeIdentifier: "en_US")
-        //yyyy/MM/dd HH:mm:ss -> 2014/06/25 02:13:18
-        dateFormatter.dateFormat = "HH"
-        if(dateFormatter.stringFromDate(now) == "00"){
+        //Change top image
+        if(timeBoolean(0, goalTime: 4)){
             topImage = UIImage(named: "image/topImage_darkness.jpg")!
         }else{
             topImage = UIImage(named: "image/topImage.jpg")!
@@ -126,7 +121,26 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    //Time event
+    func timeBoolean(startTime: UInt8, goalTime: UInt8) -> (Bool){
+        
+        var result: Bool = false
+        
+        //Get the current date and time
+        let now = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US")
+        //yyyy/MM/dd HH:mm:ss -> 2014/06/25 02:13:18
+        dateFormatter.dateFormat = "HH"
+        
+        for i in startTime...goalTime{
+            //Convert "int(Uint8)" of the acquired "String" and two number format.
+            if(dateFormatter.stringFromDate(now) == NSString(format: "%02d", i)){
+                result = true
+            }
+        }
+        return result
+    }
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668AA92F1B90BE2800EB7B06 /* FrontCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AA92E1B90BE2800EB7B06 /* FrontCameraViewController.swift */; };
+		668AA9331B90C41700EB7B06 /* YukiFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AA9321B90C41700EB7B06 /* YukiFCViewController.swift */; };
+		668AA93B1B90C4EB00EB7B06 /* KurumiFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AA93A1B90C4EB00EB7B06 /* KurumiFCViewController.swift */; };
+		668AA93D1B90C52B00EB7B06 /* YuuriFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AA93C1B90C52B00EB7B06 /* YuuriFCViewController.swift */; };
+		668AA93F1B90C54900EB7B06 /* MikiFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AA93E1B90C54900EB7B06 /* MikiFCViewController.swift */; };
 		669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DA1B88B3BD00005A1C /* AppDelegate.swift */; };
 		669760DD1B88B3BD00005A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DC1B88B3BD00005A1C /* ViewController.swift */; };
 		669760E01B88B3BD00005A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669760DE1B88B3BD00005A1C /* Main.storyboard */; };
@@ -32,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		668AA92E1B90BE2800EB7B06 /* FrontCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontCameraViewController.swift; sourceTree = "<group>"; };
+		668AA9321B90C41700EB7B06 /* YukiFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YukiFCViewController.swift; sourceTree = "<group>"; };
+		668AA93A1B90C4EB00EB7B06 /* KurumiFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KurumiFCViewController.swift; sourceTree = "<group>"; };
+		668AA93C1B90C52B00EB7B06 /* YuuriFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuuriFCViewController.swift; sourceTree = "<group>"; };
+		668AA93E1B90C54900EB7B06 /* MikiFCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MikiFCViewController.swift; sourceTree = "<group>"; };
 		669760D51B88B3BD00005A1C /* PhotoGurashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGurashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669760D91B88B3BD00005A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669760DA1B88B3BD00005A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,10 +103,15 @@
 				669760DA1B88B3BD00005A1C /* AppDelegate.swift */,
 				669760DC1B88B3BD00005A1C /* ViewController.swift */,
 				66A2CE0B1B8C4BC10019F4BE /* CommonViewController.swift */,
+				668AA92E1B90BE2800EB7B06 /* FrontCameraViewController.swift */,
 				669760FE1B898B8E00005A1C /* YukiViewController.swift */,
+				668AA9321B90C41700EB7B06 /* YukiFCViewController.swift */,
 				66A2CE091B8C3F730019F4BE /* KurumiViewController.swift */,
+				668AA93A1B90C4EB00EB7B06 /* KurumiFCViewController.swift */,
 				66A2CE0D1B8C55240019F4BE /* YuuriViewController.swift */,
+				668AA93C1B90C52B00EB7B06 /* YuuriFCViewController.swift */,
 				66A2CE0F1B8C55530019F4BE /* MikiViewController.swift */,
+				668AA93E1B90C54900EB7B06 /* MikiFCViewController.swift */,
 				669760DE1B88B3BD00005A1C /* Main.storyboard */,
 				669760E11B88B3BD00005A1C /* Images.xcassets */,
 				669760E31B88B3BD00005A1C /* LaunchScreen.xib */,
@@ -234,10 +249,15 @@
 				669760FF1B898B8E00005A1C /* YukiViewController.swift in Sources */,
 				66A2CE0A1B8C3F730019F4BE /* KurumiViewController.swift in Sources */,
 				66A2CE0C1B8C4BC10019F4BE /* CommonViewController.swift in Sources */,
+				668AA92F1B90BE2800EB7B06 /* FrontCameraViewController.swift in Sources */,
 				66A2CE101B8C55530019F4BE /* MikiViewController.swift in Sources */,
+				668AA9331B90C41700EB7B06 /* YukiFCViewController.swift in Sources */,
+				668AA93D1B90C52B00EB7B06 /* YuuriFCViewController.swift in Sources */,
+				668AA93B1B90C4EB00EB7B06 /* KurumiFCViewController.swift in Sources */,
 				66A2CE0E1B8C55240019F4BE /* YuuriViewController.swift in Sources */,
 				669760DD1B88B3BD00005A1C /* ViewController.swift in Sources */,
 				669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */,
+				668AA93F1B90C54900EB7B06 /* MikiFCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

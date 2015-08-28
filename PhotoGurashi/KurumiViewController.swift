@@ -26,6 +26,13 @@ class KurumiViewController: CommonViewController {
     }
     //END
 
+    override func changeSetting(){
+        //Lets Front Camera Mode
+        let controller = KurumiFCViewController()
+        controller.view.backgroundColor = UIColor.whiteColor()
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

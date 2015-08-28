@@ -121,12 +121,15 @@ SWIFT_CLASS("_TtC12PhotoGurashi20CommonViewController")
 @property (nonatomic) AVCaptureStillImageOutput * __null_unspecified myImageOutput;
 @property (nonatomic, readonly) UIButton * __nonnull cameraButton;
 @property (nonatomic, readonly) UIButton * __nonnull exitButton;
+@property (nonatomic, readonly) UIButton * __nonnull changeCameraButton;
 @property (nonatomic) UIImageView * __null_unspecified provisionalImageView;
 @property (nonatomic) UIImage * __nonnull provisionalImage;
 @property (nonatomic) CIImage * __null_unspecified takeInputImage;
 - (void)changeImage:(UIImage * __nonnull)image;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __nonnull)sender;
+- (void)changeSetting;
+- (void)cameraSetting;
 - (void)outputImage;
 - (void)didReceiveMemoryWarning;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -134,8 +137,40 @@ SWIFT_CLASS("_TtC12PhotoGurashi20CommonViewController")
 @end
 
 
+SWIFT_CLASS("_TtC12PhotoGurashi25FrontCameraViewController")
+@interface FrontCameraViewController : CommonViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)changeSetting;
+- (void)cameraSetting;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi22KurumiFCViewController")
+@interface KurumiFCViewController : FrontCameraViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
 SWIFT_CLASS("_TtC12PhotoGurashi20KurumiViewController")
 @interface KurumiViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)changeSetting;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi20MikiFCViewController")
+@interface MikiFCViewController : FrontCameraViewController
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
@@ -149,6 +184,7 @@ SWIFT_CLASS("_TtC12PhotoGurashi18MikiViewController")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)changeSetting;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 @end
@@ -164,13 +200,35 @@ SWIFT_CLASS("_TtC12PhotoGurashi14ViewController")
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __null_unspecified)sender;
 - (void)didReceiveMemoryWarning;
+- (BOOL)timeBoolean:(uint8_t)startTime goalTime:(uint8_t)goalTime;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+SWIFT_CLASS("_TtC12PhotoGurashi20YukiFCViewController")
+@interface YukiFCViewController : FrontCameraViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
 SWIFT_CLASS("_TtC12PhotoGurashi18YukiViewController")
 @interface YukiViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)changeSetting;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi21YuuriFCViewController")
+@interface YuuriFCViewController : FrontCameraViewController
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
@@ -184,6 +242,7 @@ SWIFT_CLASS("_TtC12PhotoGurashi19YuuriViewController")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
+- (void)changeSetting;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 @end

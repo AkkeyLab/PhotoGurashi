@@ -1,0 +1,36 @@
+### Swift dependencies file v0 ###
+provides:
+- "MikiFCViewController"
+nominals:
+- "C12PhotoGurashi20MikiFCViewController"
+class-members:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+top-level:
+- !private "StringLiteralType"
+- "NSCoder"
+- !private "UIImage"
+- "FrontCameraViewController"
+- "NSBundle"
+- "String"
+member-access:
+- "CSo16UIViewController"
+- "C12PhotoGurashi20CommonViewController"
+- !private "CSo7UIImage"
+- "CSo11UIResponder"
+- "C12PhotoGurashi25FrontCameraViewController"
+- "PSs9AnyObject"
+- "CSo8NSObject"
+- "C12PhotoGurashi20MikiFCViewController"
+dynamic-lookup:
+cross-module:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Security.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreAudio.swiftmodule"
