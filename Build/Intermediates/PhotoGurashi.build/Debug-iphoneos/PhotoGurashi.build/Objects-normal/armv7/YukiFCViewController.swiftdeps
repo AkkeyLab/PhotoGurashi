@@ -8,19 +8,19 @@ class-members:
 - "viewDidLoad"
 top-level:
 - !private "StringLiteralType"
-- "FrontCameraViewController"
 - "NSCoder"
 - !private "UIImage"
+- "FrontCameraViewController"
 - "NSBundle"
 - "String"
 member-access:
 - "C12PhotoGurashi25FrontCameraViewController"
-- "CSo11UIResponder"
+- "CSo16UIViewController"
+- "C12PhotoGurashi20CommonViewController"
 - "CSo8NSObject"
 - !private "CSo7UIImage"
-- "CSo16UIViewController"
 - "PSs9AnyObject"
-- "C12PhotoGurashi20CommonViewController"
+- "CSo11UIResponder"
 - "C12PhotoGurashi20YukiFCViewController"
 dynamic-lookup:
 cross-module:

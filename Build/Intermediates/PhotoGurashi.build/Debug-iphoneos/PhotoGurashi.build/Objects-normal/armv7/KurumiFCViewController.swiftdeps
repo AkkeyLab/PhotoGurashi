@@ -4,24 +4,24 @@ provides:
 nominals:
 - "C12PhotoGurashi22KurumiFCViewController"
 class-members:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 top-level:
-- !private "UIImage"
-- !private "StringLiteralType"
-- "FrontCameraViewController"
-- "String"
-- "NSBundle"
 - "NSCoder"
+- !private "UIImage"
+- "NSBundle"
+- "String"
+- "FrontCameraViewController"
+- !private "StringLiteralType"
 member-access:
+- "CSo16UIViewController"
+- "CSo8NSObject"
+- "PSs9AnyObject"
+- "C12PhotoGurashi22KurumiFCViewController"
 - !private "CSo7UIImage"
 - "C12PhotoGurashi25FrontCameraViewController"
-- "CSo8NSObject"
 - "C12PhotoGurashi20CommonViewController"
 - "CSo11UIResponder"
-- "C12PhotoGurashi22KurumiFCViewController"
-- "PSs9AnyObject"
-- "CSo16UIViewController"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

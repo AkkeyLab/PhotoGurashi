@@ -7,20 +7,20 @@ class-members:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 top-level:
-- !private "UIImage"
-- "NSCoder"
-- !private "StringLiteralType"
 - "CommonViewController"
 - "NSBundle"
+- !private "StringLiteralType"
 - "String"
+- "NSCoder"
+- !private "UIImage"
 member-access:
-- !private "CSo7UIImage"
 - "C12PhotoGurashi20KurumiViewController"
-- "CSo11UIResponder"
-- "CSo16UIViewController"
-- "PSs9AnyObject"
-- "C12PhotoGurashi20CommonViewController"
 - "CSo8NSObject"
+- "C12PhotoGurashi20CommonViewController"
+- "PSs9AnyObject"
+- "CSo16UIViewController"
+- "CSo11UIResponder"
+- !private "CSo7UIImage"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Swift.swiftmodule"

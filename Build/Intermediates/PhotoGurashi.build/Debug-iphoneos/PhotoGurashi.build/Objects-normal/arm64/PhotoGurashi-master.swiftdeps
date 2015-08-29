@@ -6,5 +6,5 @@ inputs:
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/CommonViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MikiViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YuuriViewController.swift"
-- !dirty "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift"
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/AppDelegate.swift"

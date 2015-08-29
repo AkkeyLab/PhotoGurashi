@@ -121,12 +121,16 @@ SWIFT_CLASS("_TtC12PhotoGurashi20CommonViewController")
 @property (nonatomic) AVCaptureStillImageOutput * __null_unspecified myImageOutput;
 @property (nonatomic, readonly) UIButton * __nonnull cameraButton;
 @property (nonatomic, readonly) UIButton * __nonnull exitButton;
+@property (nonatomic, readonly) UIButton * __nonnull changeCameraButton;
 @property (nonatomic) UIImageView * __null_unspecified provisionalImageView;
 @property (nonatomic) UIImage * __nonnull provisionalImage;
+@property (nonatomic) BOOL cameraInfo;
 @property (nonatomic) CIImage * __null_unspecified takeInputImage;
 - (void)changeImage:(UIImage * __nonnull)image;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __nonnull)sender;
+- (void)changeSetting;
+- (void)cameraSetting;
 - (void)outputImage;
 - (void)didReceiveMemoryWarning;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -164,6 +168,7 @@ SWIFT_CLASS("_TtC12PhotoGurashi14ViewController")
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __null_unspecified)sender;
 - (void)didReceiveMemoryWarning;
+- (BOOL)timeBoolean:(uint8_t)startTime goalTime:(uint8_t)goalTime;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

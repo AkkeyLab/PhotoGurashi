@@ -25,13 +25,6 @@ class MikiViewController: CommonViewController {
         self.init(nibName: nil, bundle: nil)
     }
     //END
-
-    override func changeSetting(){
-        //Lets Front Camera Mode
-        let controller = MikiFCViewController()
-        controller.view.backgroundColor = UIColor.whiteColor()
-        self.presentViewController(controller, animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

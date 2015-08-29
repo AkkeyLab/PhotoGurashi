@@ -4,24 +4,24 @@ provides:
 nominals:
 - "C12PhotoGurashi20MikiFCViewController"
 class-members:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 top-level:
-- !private "StringLiteralType"
-- "NSCoder"
 - !private "UIImage"
+- "NSCoder"
 - "FrontCameraViewController"
-- "NSBundle"
+- !private "StringLiteralType"
 - "String"
+- "NSBundle"
 member-access:
-- "CSo16UIViewController"
-- "C12PhotoGurashi20CommonViewController"
-- !private "CSo7UIImage"
-- "CSo11UIResponder"
 - "C12PhotoGurashi25FrontCameraViewController"
+- "CSo11UIResponder"
+- "C12PhotoGurashi20MikiFCViewController"
+- "C12PhotoGurashi20CommonViewController"
 - "PSs9AnyObject"
 - "CSo8NSObject"
-- "C12PhotoGurashi20MikiFCViewController"
+- !private "CSo7UIImage"
+- "CSo16UIViewController"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"

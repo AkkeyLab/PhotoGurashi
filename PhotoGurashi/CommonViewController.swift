@@ -21,6 +21,8 @@ class CommonViewController: UIViewController {
     let changeCameraButton:   UIButton = UIButton()
     var provisionalImageView: UIImageView!
     var provisionalImage:     UIImage = UIImage(named: "image/yuki.png")!
+    
+    var cameraInfo:           Bool = true
     //Take a picture
     var takeInputImage:       CIImage!
     //****END****
@@ -56,12 +58,13 @@ class CommonViewController: UIViewController {
         
         //Add provisional Image
         provisionalImageView = UIImageView(frame: CGRectMake(0, 0, (self.view.bounds.width  / 2) + (self.view.bounds.width  / 4),
-            (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
+                                                                   (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
+        
         //memo: Move to field
         //let provisionalImage = UIImage(named: "image/yuki.png")
         provisionalImageView.image = provisionalImage
         provisionalImageView.layer.position = CGPoint(x: (self.view.bounds.width  / 2) + (self.view.bounds.width  / 8),
-            y: (self.view.bounds.height / 2) + (self.view.bounds.height / 8))
+                                                      y: (self.view.bounds.height / 2) + (self.view.bounds.height / 8))
         //Add View
         self.view.addSubview(provisionalImageView)
         
@@ -92,12 +95,12 @@ class CommonViewController: UIViewController {
         
         //ex) let changeCameraButton = UIButton(frame: CGRectMake(0,0,80,80))
         changeCameraButton.frame = CGRectMake(0, 0, 50, 50)//size
-        changeCameraButton.backgroundColor = UIColor.cyanColor()
+        changeCameraButton.backgroundColor = UIColor.grayColor()
         changeCameraButton.layer.masksToBounds = true
         changeCameraButton.setTitle("変更", forState: .Normal)
         changeCameraButton.titleLabel?.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
-        changeCameraButton.setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
-        changeCameraButton.layer.cornerRadius = 10.0//edge
+        changeCameraButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        changeCameraButton.layer.cornerRadius = 25.0//edge
         changeCameraButton.layer.position = CGPoint(x: self.view.bounds.width - 50, y: 50)
         changeCameraButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
         changeCameraButton.tag = 2
@@ -115,15 +118,12 @@ class CommonViewController: UIViewController {
             //Lets exit
             self.dismissViewControllerAnimated(true, completion: nil)
         case 2:
-            changeSetting()
+            cameraInfo = !cameraInfo
+            viewDidLoad()
         default:
             print("ERROR")
         }
         
-    }
-    
-    func changeSetting(){
-        //We want to add in the inheritance destination.
     }
     
     func cameraSetting(){
@@ -131,10 +131,17 @@ class CommonViewController: UIViewController {
         mySession = AVCaptureSession()
         
         let devices = AVCaptureDevice.devices()//Add all devices
-        for device in devices{//Select back camera
-            if(device.position == AVCaptureDevicePosition.Back){
-                myDevice = device as! AVCaptureDevice
+        for device in devices{
+            if(cameraInfo){//Select back camera
+                if(device.position == AVCaptureDevicePosition.Back){
+                    myDevice = device as! AVCaptureDevice
+                }
+            }else{//Select front camera
+                if(device.position == AVCaptureDevicePosition.Front){
+                    myDevice = device as! AVCaptureDevice
+                }
             }
+            
         }
         
         let videoInput = AVCaptureDeviceInput.deviceInputWithDevice(myDevice, error: nil) as! AVCaptureDeviceInput

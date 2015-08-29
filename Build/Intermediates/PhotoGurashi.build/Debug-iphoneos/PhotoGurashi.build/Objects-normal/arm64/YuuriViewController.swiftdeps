@@ -4,22 +4,22 @@ provides:
 nominals:
 - "C12PhotoGurashi19YuuriViewController"
 class-members:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 top-level:
-- "NSCoder"
-- !private "UIImage"
-- "CommonViewController"
 - !private "StringLiteralType"
+- !private "UIImage"
+- "NSCoder"
+- "CommonViewController"
 - "NSBundle"
 - "String"
 member-access:
-- "C12PhotoGurashi19YuuriViewController"
+- !private "CSo7UIImage"
 - "CSo16UIViewController"
 - "PSs9AnyObject"
-- "CSo8NSObject"
 - "C12PhotoGurashi20CommonViewController"
-- !private "CSo7UIImage"
+- "CSo8NSObject"
+- "C12PhotoGurashi19YuuriViewController"
 - "CSo11UIResponder"
 dynamic-lookup:
 cross-module:
