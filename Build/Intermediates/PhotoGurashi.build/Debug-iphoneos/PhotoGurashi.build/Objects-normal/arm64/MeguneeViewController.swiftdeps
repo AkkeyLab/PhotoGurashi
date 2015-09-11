@@ -1,0 +1,35 @@
+### Swift dependencies file v0 ###
+provides:
+- "MeguneeViewController"
+nominals:
+- "C12PhotoGurashi21MeguneeViewController"
+class-members:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+top-level:
+- "String"
+- "NSBundle"
+- "NSCoder"
+- !private "StringLiteralType"
+- !private "UIImage"
+- "CommonViewController"
+member-access:
+- !private "CSo7UIImage"
+- "CSo16UIViewController"
+- "C12PhotoGurashi20CommonViewController"
+- "C12PhotoGurashi21MeguneeViewController"
+- "CSo11UIResponder"
+- "PSs9AnyObject"
+- "CSo8NSObject"
+dynamic-lookup:
+cross-module:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/Security.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/CoreAudio.swiftmodule"

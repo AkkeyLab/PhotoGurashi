@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6695E9F21BA2A65200064000 /* MeguneeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695E9F11BA2A65200064000 /* MeguneeViewController.swift */; };
 		669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DA1B88B3BD00005A1C /* AppDelegate.swift */; };
 		669760DD1B88B3BD00005A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DC1B88B3BD00005A1C /* ViewController.swift */; };
 		669760E01B88B3BD00005A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669760DE1B88B3BD00005A1C /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6695E9F11BA2A65200064000 /* MeguneeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeguneeViewController.swift; sourceTree = "<group>"; };
 		669760D51B88B3BD00005A1C /* PhotoGurashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGurashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669760D91B88B3BD00005A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669760DA1B88B3BD00005A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				66A2CE0B1B8C4BC10019F4BE /* CommonViewController.swift */,
 				669760FE1B898B8E00005A1C /* YukiViewController.swift */,
 				66A2CE091B8C3F730019F4BE /* KurumiViewController.swift */,
+				6695E9F11BA2A65200064000 /* MeguneeViewController.swift */,
 				66A2CE0D1B8C55240019F4BE /* YuuriViewController.swift */,
 				66A2CE0F1B8C55530019F4BE /* MikiViewController.swift */,
 				669760DE1B88B3BD00005A1C /* Main.storyboard */,
@@ -179,6 +182,7 @@
 				TargetAttributes = {
 					669760D41B88B3BD00005A1C = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2E5E462W28;
 					};
 					669760E91B88B3BD00005A1C = {
 						CreatedOnToolsVersion = 6.4;
@@ -234,6 +238,7 @@
 				669760FF1B898B8E00005A1C /* YukiViewController.swift in Sources */,
 				66A2CE0A1B8C3F730019F4BE /* KurumiViewController.swift in Sources */,
 				66A2CE0C1B8C4BC10019F4BE /* CommonViewController.swift in Sources */,
+				6695E9F21BA2A65200064000 /* MeguneeViewController.swift in Sources */,
 				66A2CE101B8C55530019F4BE /* MikiViewController.swift in Sources */,
 				66A2CE0E1B8C55240019F4BE /* YuuriViewController.swift in Sources */,
 				669760DD1B88B3BD00005A1C /* ViewController.swift in Sources */,
@@ -366,10 +371,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PhotoGurashi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -377,10 +385,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PhotoGurashi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

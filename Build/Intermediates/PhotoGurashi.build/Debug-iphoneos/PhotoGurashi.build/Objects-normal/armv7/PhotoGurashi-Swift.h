@@ -129,7 +129,6 @@ SWIFT_CLASS("_TtC12PhotoGurashi20CommonViewController")
 - (void)changeImage:(UIImage * __nonnull)image;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __nonnull)sender;
-- (void)changeSetting;
 - (void)cameraSetting;
 - (void)outputImage;
 - (void)didReceiveMemoryWarning;
@@ -145,6 +144,15 @@ SWIFT_CLASS("_TtC12PhotoGurashi20KurumiViewController")
 - (SWIFT_NULLABILITY(nonnull) instancetype)init;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+@end
+
+
+SWIFT_CLASS("_TtC12PhotoGurashi21MeguneeViewController")
+@interface MeguneeViewController : CommonViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

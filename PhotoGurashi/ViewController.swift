@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let kurumiButton: UIButton = UIButton()
     let yuuriButton:  UIButton = UIButton()
     let mikiButton:   UIButton = UIButton()
+    let meguneeButton:UIButton = UIButton()
     var topImage:     UIImage  = UIImage()
     
     override func viewDidLoad() {
@@ -87,6 +88,20 @@ class ViewController: UIViewController {
         mikiButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
         mikiButton.tag = 3
         self.view.addSubview(mikiButton)
+        
+        //ex) let meguneeButton = UIButton(frame: CGRectMake(0,0,80,80))
+        meguneeButton.frame = CGRectMake(0, 0, 80, 80)//size
+        meguneeButton.backgroundColor = UIColor.yellowColor()
+        meguneeButton.layer.masksToBounds = true
+        meguneeButton.setTitle("佐倉", forState: .Normal)
+        meguneeButton.titleLabel?.font = UIFont.systemFontOfSize(UIFont.buttonFontSize())
+        meguneeButton.setTitleColor(UIColor.magentaColor(), forState: UIControlState.Normal)
+        meguneeButton.layer.cornerRadius = 40.0//edge
+        meguneeButton.layer.position = CGPoint(x: (self.view.bounds.width  / 2),
+                                               y: (self.view.bounds.height / 2) + (self.view.bounds.height / 9))
+        meguneeButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        meguneeButton.tag = 4
+        self.view.addSubview(meguneeButton)
     }
     
     //Button event
@@ -110,6 +125,11 @@ class ViewController: UIViewController {
         case 3:
             //Lets miki mode
             let controller = MikiViewController()
+            controller.view.backgroundColor = UIColor.whiteColor()
+            self.presentViewController(controller, animated: true, completion: nil)
+        case 4:
+            //Lets megunee mode
+            let controller = MeguneeViewController()
             controller.view.backgroundColor = UIColor.whiteColor()
             self.presentViewController(controller, animated: true, completion: nil)
         default:

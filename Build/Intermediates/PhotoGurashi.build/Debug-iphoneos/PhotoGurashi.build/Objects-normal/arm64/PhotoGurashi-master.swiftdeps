@@ -1,9 +1,10 @@
 version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "fc707ddcbb1d01376be445102c88ad43"
+options: "aa927bc07cf3038f72025f857cfd0d92"
 inputs: 
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YukiViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/KurumiViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/CommonViewController.swift"
+- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MeguneeViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MikiViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YuuriViewController.swift"
 - "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift"
