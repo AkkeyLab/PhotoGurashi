@@ -149,10 +149,11 @@ SWIFT_CLASS("_TtC12PhotoGurashi20KurumiViewController")
 
 SWIFT_CLASS("_TtC12PhotoGurashi21MeguneeViewController")
 @interface MeguneeViewController : CommonViewController
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __null_unspecified)nibNameOrNil bundle:(NSBundle * __null_unspecified)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)init;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -172,6 +173,7 @@ SWIFT_CLASS("_TtC12PhotoGurashi14ViewController")
 @property (nonatomic, readonly) UIButton * __nonnull kurumiButton;
 @property (nonatomic, readonly) UIButton * __nonnull yuuriButton;
 @property (nonatomic, readonly) UIButton * __nonnull mikiButton;
+@property (nonatomic, readonly) UIButton * __nonnull meguneeButton;
 @property (nonatomic) UIImage * __nonnull topImage;
 - (void)viewDidLoad;
 - (void)onClickButton:(UIButton * __null_unspecified)sender;
