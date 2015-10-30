@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/CommonViewController.swift",
+  "offset": 4822,
+  "remove": 1017,
+  "text": ", terminator: \"\")\n        }\n        \n    }\n    \n    func cameraSetting(){\n        \n        mySession = AVCaptureSession()\n        \n        let devices = AVCaptureDevice.devices()//Add all devices\n        for device in devices{\n            if(cameraInfo){//Select back camera\n                if(device.position == AVCaptureDevicePosition.Back){\n                    myDevice = device as! AVCaptureDevice\n                }\n            }else{//Select front camera\n                if(device.position == AVCaptureDevicePosition.Front){\n                    myDevice = device as! AVCaptureDevice\n                }\n            }\n            \n        }\n        \n        let videoInput = (try! AVCaptureDeviceInput.deviceInputWithDevice(myDevice)) \n        mySession.addInput(videoInput)\n        \n        myImageOutput = AVCaptureStillImageOutput()\n        mySession.addOutput(myImageOutput)\n        \n        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as",
+ }
+]

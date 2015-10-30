@@ -133,7 +133,7 @@ class ViewController: UIViewController {
             controller.view.backgroundColor = UIColor.whiteColor()
             self.presentViewController(controller, animated: true, completion: nil)
         default:
-            print("ERROR")
+            print("ERROR", terminator: "")
         }
     }
     

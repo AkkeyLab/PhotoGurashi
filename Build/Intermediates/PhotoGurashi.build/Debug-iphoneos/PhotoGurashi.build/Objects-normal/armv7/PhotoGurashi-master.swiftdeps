@@ -1,11 +1,12 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "4cc3c098a3226bdd9ee30dbeb3185e99"
-inputs: 
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YukiViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/KurumiViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/CommonViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MeguneeViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MikiViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YuuriViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift"
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/AppDelegate.swift"
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "333b80f1e593c8d3389f8f318097db85"
+build_time: [499542991, 192230000]
+inputs:
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/AppDelegate.swift": [494180746, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MikiViewController.swift": [498767187, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/CommonViewController.swift": [499536171, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/ViewController.swift": [499541743, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YukiViewController.swift": [498767187, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/YuuriViewController.swift": [498767187, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/KurumiViewController.swift": [498767187, 0]
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashi/MeguneeViewController.swift": [498767187, 0]

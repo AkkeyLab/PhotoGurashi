@@ -1,4 +1,5 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "bf0f45b868c28d86b6f6608ee4f496e1"
-inputs: 
-- "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashiTests/PhotoGurashiTests.swift"
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "d99cd796d200face205daac16800a468"
+build_time: [499539890, 27919000]
+inputs:
+  "/Users/AKIO/Documents/Program/Xcode/PhotoGurashi/PhotoGurashiTests/PhotoGurashiTests.swift": [493566141, 0]

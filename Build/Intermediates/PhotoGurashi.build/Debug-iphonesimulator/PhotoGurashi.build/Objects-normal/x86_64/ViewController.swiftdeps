@@ -1,143 +1,1333 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "ViewController"
-nominals:
+provides-nominal:
 - "C12PhotoGurashi14ViewController"
-class-members:
-- "mikiButton"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "yukiButton"
-- "yuuriButton"
-- "onClickButton"
-- "topImage"
-- "timeBoolean"
+provides-member:
+- ["C12PhotoGurashi14ViewController", ""]
+provides-dynamic-lookup:
 - "kurumiButton"
-top-level:
-- !private "+"
-- !private "-"
-- !private "UIColor"
-- !private "print"
-- "UIImageView"
-- !private "~="
-- !private "UIControlState"
-- !private "=="
-- !private "BooleanLiteralType"
-- !private "CGPoint"
-- !private "/"
-- !private "MikiViewController"
-- !private "NSLocale"
-- !private "NSDate"
-- !private "KurumiViewController"
-- "Bool"
-- !private "UIFont"
-- !private "NSDateFormatter"
-- !private "YukiViewController"
+- "mikiButton"
+- "viewDidLoad"
+- "onClickButton"
+- "yukiButton"
+- "topImage"
+- "yuuriButton"
+- "timeBoolean"
+- "meguneeButton"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "NSString"
+- "UIViewController"
 - !private "CGRectMake"
 - !private "StringLiteralType"
-- !private "..."
+- "ViewController"
+- !private "NSDate"
+- !private "CGPoint"
+- !private "YukiViewController"
+- !private "MeguneeViewController"
+- !private "MikiViewController"
 - "UIButton"
-- !private "NSString"
+- !private "+"
+- !private "~="
+- !private "=="
+- !private "..."
 - "UInt8"
 - !private "YuuriViewController"
-- "UIViewController"
 - "UIImage"
-member-access:
-- !private "CSo6NSDate"
-- !private "PSs16SignedNumberType"
-- !private "PSs17_ForwardIndexType"
-- !private "PSs23FloatLiteralConvertible"
-- !private "VSC15UIControlEvents"
-- !private "PSs14CollectionType"
-- !private "CSo7UILabel"
-- "CSo6UIView"
-- !private "PSs23_BidirectionalIndexType"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs11Reflectable"
-- !private "SS"
-- !private "PSs17SignedIntegerType"
-- !private "PSs12_IntegerType"
-- !private "C12PhotoGurashi18MikiViewController"
-- !private "CSo8NSNumber"
-- !private "CSo11UIImageView"
-- !private "VSC14UIControlState"
-- !private "PSs22_IntegerArithmeticType"
-- !private "Sb"
-- !private "PSs25IntegerLiteralConvertible"
-- !private "VSs5Range"
-- "CSo8NSObject"
-- !private "PSs22BidirectionalIndexType"
-- !private "CSo8NSString"
-- !private "CSo15NSDateFormatter"
-- !private "CSo7CALayer"
-- !private "Si"
-- !private "PSs13GeneratorType"
-- !private "PSs11CVarArgType"
-- !private "CSo7NSValue"
-- !private "C12PhotoGurashi20CommonViewController"
-- !private "PSs16ForwardIndexType"
-- !private "CSo7UIColor"
-- !private "CSo6UIFont"
-- !private "V10ObjectiveC8Selector"
-- !private "PSs21BitwiseOperationsType"
-- !private "PSs10Comparable"
-- "C12PhotoGurashi14ViewController"
-- !private "CSo11NSFormatter"
-- !private "PSs20_UnsignedIntegerType"
-- !private "PSs21RandomAccessIndexType"
-- !private "PSs11IntegerType"
-- !private "VSs14ClosedInterval"
-- !private "PSs11_Comparable"
-- !private "PSs9Equatable"
-- !private "PSs22_RandomAccessIndexType"
-- "CSo11UIResponder"
-- !private "PSs14_Incrementable"
-- !private "PSs9Printable"
-- "PSs9AnyObject"
-- !private "VSC7CGPoint"
-- !private "PSs17_SignedNumberType"
-- !private "PSs31_BuiltinFloatLiteralConvertible"
-- !private "PSs17FloatingPointType"
-- !private "PSs11_Strideable"
-- !private "PSs18_SignedIntegerType"
-- !private "PSs13_SequenceType"
-- "CSo16UIViewController"
-- !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "V12CoreGraphics7CGFloat"
-- "CSo8UIButton"
-- !private "C12PhotoGurashi18YukiViewController"
-- !private "C12PhotoGurashi20KurumiViewController"
-- !private "SQ"
-- !private "PSs8Hashable"
-- !private "PSs18_StringElementType"
-- !private "VSC6CGRect"
-- !private "PSs21IntegerArithmeticType"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs22_CVarArgPassedAsDouble"
-- !private "VSs5UInt8"
-- !private "PSs15_CollectionType"
+- !private "UIColor"
+- !private "UIControlState"
+- !private "/"
+- !private "BooleanLiteralType"
+- !private "-"
+- "UIImageView"
+- !private "NSLocale"
+- !private "KurumiViewController"
+- !private "NSDateFormatter"
+- "Bool"
+- !private "UIFont"
+- !private "print"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "Stride"]
+- !private ["PSs9AnyObject", "CGPoint"]
+- !private ["PSs9AnyObject", "CGRectMake"]
+- !private ["PSs9AnyObject", "KurumiViewController"]
+- !private ["PSs9AnyObject", "MeguneeViewController"]
+- !private ["PSs9AnyObject", "MikiViewController"]
+- !private ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "NSDateFormatter"]
+- !private ["PSs9AnyObject", "NSLocale"]
+- !private ["PSs9AnyObject", "NSString"]
+- ["PSs9AnyObject", "UIButton"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIControlState"]
+- !private ["PSs9AnyObject", "UIFont"]
+- ["PSs9AnyObject", "UIImage"]
+- !private ["PSs9AnyObject", "UIImageView"]
+- !private ["PSs9AnyObject", "YukiViewController"]
+- !private ["PSs9AnyObject", "YuuriViewController"]
+- !private ["PSs9AnyObject", "addSubview"]
+- !private ["PSs9AnyObject", "addTarget"]
+- !private ["PSs9AnyObject", "backgroundColor"]
+- !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "buttonFontSize"]
+- !private ["PSs9AnyObject", "cornerRadius"]
+- !private ["PSs9AnyObject", "dateFormat"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "font"]
+- !private ["PSs9AnyObject", "frame"]
+- !private ["PSs9AnyObject", "image"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "kurumiButton"]
+- !private ["PSs9AnyObject", "layer"]
+- !private ["PSs9AnyObject", "locale"]
+- !private ["PSs9AnyObject", "magentaColor"]
+- !private ["PSs9AnyObject", "masksToBounds"]
+- ["PSs9AnyObject", "meguneeButton"]
+- ["PSs9AnyObject", "mikiButton"]
+- ["PSs9AnyObject", "onClickButton"]
+- !private ["PSs9AnyObject", "orangeColor"]
+- !private ["PSs9AnyObject", "position"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "purpleColor"]
+- !private ["PSs9AnyObject", "redColor"]
+- !private ["PSs9AnyObject", "setTitle"]
+- !private ["PSs9AnyObject", "setTitleColor"]
+- !private ["PSs9AnyObject", "stringFromDate"]
+- !private ["PSs9AnyObject", "systemFontOfSize"]
+- !private ["PSs9AnyObject", "tag"]
+- ["PSs9AnyObject", "timeBoolean"]
+- !private ["PSs9AnyObject", "titleLabel"]
+- ["PSs9AnyObject", "topImage"]
+- ["PSs9AnyObject", "topImageView"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- !private ["PSs9AnyObject", "yellowColor"]
+- ["PSs9AnyObject", "yukiButton"]
+- ["PSs9AnyObject", "yuuriButton"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "Normal"]
+- !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
+- !private ["PSs22BidirectionalIndexType", "_DisabledRangeIndex"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
+- !private ["PSs21BitwiseOperationsType", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["CSo7CALayer", "masksToBounds"]
+- !private ["CSo7CALayer", "position"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "masksToBounds"]
+- !private ["PSo13CAMediaTiming", "position"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "width"]
+- !private ["PSs11CVarArgType", "CGPoint"]
+- !private ["PSs11CVarArgType", "CGRectMake"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "KurumiViewController"]
+- !private ["PSs11CVarArgType", "MeguneeViewController"]
+- !private ["PSs11CVarArgType", "MikiViewController"]
+- !private ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "NSDateFormatter"]
+- !private ["PSs11CVarArgType", "NSLocale"]
+- !private ["PSs11CVarArgType", "NSString"]
+- !private ["PSs11CVarArgType", "Stride"]
+- ["PSs11CVarArgType", "UIButton"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIControlState"]
+- !private ["PSs11CVarArgType", "UIFont"]
+- ["PSs11CVarArgType", "UIImage"]
+- !private ["PSs11CVarArgType", "UIImageView"]
+- !private ["PSs11CVarArgType", "YukiViewController"]
+- !private ["PSs11CVarArgType", "YuuriViewController"]
+- !private ["PSs11CVarArgType", "_DisabledRangeIndex"]
+- !private ["PSs11CVarArgType", "addSubview"]
+- !private ["PSs11CVarArgType", "addTarget"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
+- !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "buttonFontSize"]
+- !private ["PSs11CVarArgType", "cornerRadius"]
+- !private ["PSs11CVarArgType", "dateFormat"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "font"]
+- !private ["PSs11CVarArgType", "frame"]
+- !private ["PSs11CVarArgType", "image"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "kurumiButton"]
+- !private ["PSs11CVarArgType", "layer"]
+- !private ["PSs11CVarArgType", "locale"]
+- !private ["PSs11CVarArgType", "magentaColor"]
+- !private ["PSs11CVarArgType", "masksToBounds"]
+- ["PSs11CVarArgType", "meguneeButton"]
+- ["PSs11CVarArgType", "mikiButton"]
+- ["PSs11CVarArgType", "onClickButton"]
+- !private ["PSs11CVarArgType", "orangeColor"]
+- !private ["PSs11CVarArgType", "position"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "purpleColor"]
+- !private ["PSs11CVarArgType", "redColor"]
+- !private ["PSs11CVarArgType", "setTitle"]
+- !private ["PSs11CVarArgType", "setTitleColor"]
+- !private ["PSs11CVarArgType", "stringFromDate"]
+- !private ["PSs11CVarArgType", "systemFontOfSize"]
+- !private ["PSs11CVarArgType", "tag"]
+- ["PSs11CVarArgType", "timeBoolean"]
+- !private ["PSs11CVarArgType", "titleLabel"]
+- ["PSs11CVarArgType", "topImage"]
+- ["PSs11CVarArgType", "topImageView"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- !private ["PSs11CVarArgType", "yellowColor"]
+- ["PSs11CVarArgType", "yukiButton"]
+- ["PSs11CVarArgType", "yuuriButton"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs14ClosedInterval", "deinit"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["C12PhotoGurashi20CommonViewController", "init"]
+- !private ["C12PhotoGurashi20CommonViewController", "view"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "Stride"]
+- !private ["PSs10Comparable", "_DisabledRangeIndex"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "CGPoint"]
+- !private ["PSs23CustomStringConvertible", "CGRectMake"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "KurumiViewController"]
+- !private ["PSs23CustomStringConvertible", "MeguneeViewController"]
+- !private ["PSs23CustomStringConvertible", "MikiViewController"]
+- !private ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "NSDateFormatter"]
+- !private ["PSs23CustomStringConvertible", "NSLocale"]
+- !private ["PSs23CustomStringConvertible", "NSString"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
+- ["PSs23CustomStringConvertible", "UIButton"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIControlState"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
+- ["PSs23CustomStringConvertible", "UIImage"]
+- !private ["PSs23CustomStringConvertible", "UIImageView"]
+- !private ["PSs23CustomStringConvertible", "YukiViewController"]
+- !private ["PSs23CustomStringConvertible", "YuuriViewController"]
+- !private ["PSs23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addSubview"]
+- !private ["PSs23CustomStringConvertible", "addTarget"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "buttonFontSize"]
+- !private ["PSs23CustomStringConvertible", "cornerRadius"]
+- !private ["PSs23CustomStringConvertible", "dateFormat"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "font"]
+- !private ["PSs23CustomStringConvertible", "frame"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "kurumiButton"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- !private ["PSs23CustomStringConvertible", "locale"]
+- !private ["PSs23CustomStringConvertible", "magentaColor"]
+- !private ["PSs23CustomStringConvertible", "masksToBounds"]
+- ["PSs23CustomStringConvertible", "meguneeButton"]
+- ["PSs23CustomStringConvertible", "mikiButton"]
+- ["PSs23CustomStringConvertible", "onClickButton"]
+- !private ["PSs23CustomStringConvertible", "orangeColor"]
+- !private ["PSs23CustomStringConvertible", "position"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "purpleColor"]
+- !private ["PSs23CustomStringConvertible", "redColor"]
+- !private ["PSs23CustomStringConvertible", "setTitle"]
+- !private ["PSs23CustomStringConvertible", "setTitleColor"]
+- !private ["PSs23CustomStringConvertible", "stringFromDate"]
+- !private ["PSs23CustomStringConvertible", "systemFontOfSize"]
+- !private ["PSs23CustomStringConvertible", "tag"]
+- ["PSs23CustomStringConvertible", "timeBoolean"]
+- !private ["PSs23CustomStringConvertible", "titleLabel"]
+- ["PSs23CustomStringConvertible", "topImage"]
+- ["PSs23CustomStringConvertible", "topImageView"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- !private ["PSs23CustomStringConvertible", "yellowColor"]
+- ["PSs23CustomStringConvertible", "yukiButton"]
+- ["PSs23CustomStringConvertible", "yuuriButton"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "CGPoint"]
+- !private ["PSs9Equatable", "CGRectMake"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "KurumiViewController"]
+- !private ["PSs9Equatable", "MeguneeViewController"]
+- !private ["PSs9Equatable", "MikiViewController"]
+- !private ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "NSDateFormatter"]
+- !private ["PSs9Equatable", "NSLocale"]
+- !private ["PSs9Equatable", "NSString"]
+- !private ["PSs9Equatable", "Normal"]
+- !private ["PSs9Equatable", "Stride"]
+- !private ["PSs9Equatable", "TouchUpInside"]
+- ["PSs9Equatable", "UIButton"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIControlState"]
+- !private ["PSs9Equatable", "UIFont"]
+- ["PSs9Equatable", "UIImage"]
+- !private ["PSs9Equatable", "UIImageView"]
+- !private ["PSs9Equatable", "YukiViewController"]
+- !private ["PSs9Equatable", "YuuriViewController"]
+- !private ["PSs9Equatable", "_DisabledRangeIndex"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addSubview"]
+- !private ["PSs9Equatable", "addTarget"]
+- !private ["PSs9Equatable", "backgroundColor"]
+- !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "buttonFontSize"]
+- !private ["PSs9Equatable", "cornerRadius"]
+- !private ["PSs9Equatable", "dateFormat"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "font"]
+- !private ["PSs9Equatable", "frame"]
+- !private ["PSs9Equatable", "height"]
+- !private ["PSs9Equatable", "image"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "kurumiButton"]
+- !private ["PSs9Equatable", "layer"]
+- !private ["PSs9Equatable", "locale"]
+- !private ["PSs9Equatable", "magentaColor"]
+- !private ["PSs9Equatable", "masksToBounds"]
+- ["PSs9Equatable", "meguneeButton"]
+- ["PSs9Equatable", "mikiButton"]
+- ["PSs9Equatable", "onClickButton"]
+- !private ["PSs9Equatable", "orangeColor"]
+- !private ["PSs9Equatable", "position"]
+- !private ["PSs9Equatable", "presentViewController"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "purpleColor"]
+- !private ["PSs9Equatable", "redColor"]
+- !private ["PSs9Equatable", "setTitle"]
+- !private ["PSs9Equatable", "setTitleColor"]
+- !private ["PSs9Equatable", "stringFromDate"]
+- !private ["PSs9Equatable", "systemFontOfSize"]
+- !private ["PSs9Equatable", "tag"]
+- ["PSs9Equatable", "timeBoolean"]
+- !private ["PSs9Equatable", "titleLabel"]
+- ["PSs9Equatable", "topImage"]
+- ["PSs9Equatable", "topImageView"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- !private ["PSs9Equatable", "whiteColor"]
+- !private ["PSs9Equatable", "width"]
+- !private ["PSs9Equatable", "yellowColor"]
+- ["PSs9Equatable", "yukiButton"]
+- ["PSs9Equatable", "yuuriButton"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs23FloatLiteralConvertible", "Stride"]
+- !private ["PSs17FloatingPointType", "Stride"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Stride"]
+- !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "CGPoint"]
+- !private ["PSs8Hashable", "CGRectMake"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "KurumiViewController"]
+- !private ["PSs8Hashable", "MeguneeViewController"]
+- !private ["PSs8Hashable", "MikiViewController"]
+- !private ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "NSDateFormatter"]
+- !private ["PSs8Hashable", "NSLocale"]
+- !private ["PSs8Hashable", "NSString"]
+- !private ["PSs8Hashable", "Stride"]
+- ["PSs8Hashable", "UIButton"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIControlState"]
+- !private ["PSs8Hashable", "UIFont"]
+- ["PSs8Hashable", "UIImage"]
+- !private ["PSs8Hashable", "UIImageView"]
+- !private ["PSs8Hashable", "YukiViewController"]
+- !private ["PSs8Hashable", "YuuriViewController"]
+- !private ["PSs8Hashable", "_DisabledRangeIndex"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addSubview"]
+- !private ["PSs8Hashable", "addTarget"]
+- !private ["PSs8Hashable", "backgroundColor"]
+- !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "buttonFontSize"]
+- !private ["PSs8Hashable", "cornerRadius"]
+- !private ["PSs8Hashable", "dateFormat"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "font"]
+- !private ["PSs8Hashable", "frame"]
+- !private ["PSs8Hashable", "image"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "kurumiButton"]
+- !private ["PSs8Hashable", "layer"]
+- !private ["PSs8Hashable", "locale"]
+- !private ["PSs8Hashable", "magentaColor"]
+- !private ["PSs8Hashable", "masksToBounds"]
+- ["PSs8Hashable", "meguneeButton"]
+- ["PSs8Hashable", "mikiButton"]
+- ["PSs8Hashable", "onClickButton"]
+- !private ["PSs8Hashable", "orangeColor"]
+- !private ["PSs8Hashable", "position"]
+- !private ["PSs8Hashable", "presentViewController"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "purpleColor"]
+- !private ["PSs8Hashable", "redColor"]
+- !private ["PSs8Hashable", "setTitle"]
+- !private ["PSs8Hashable", "setTitleColor"]
+- !private ["PSs8Hashable", "stringFromDate"]
+- !private ["PSs8Hashable", "systemFontOfSize"]
+- !private ["PSs8Hashable", "tag"]
+- ["PSs8Hashable", "timeBoolean"]
+- !private ["PSs8Hashable", "titleLabel"]
+- ["PSs8Hashable", "topImage"]
+- ["PSs8Hashable", "topImageView"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- !private ["PSs8Hashable", "whiteColor"]
+- !private ["PSs8Hashable", "yellowColor"]
+- ["PSs8Hashable", "yukiButton"]
+- ["PSs8Hashable", "yuuriButton"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
+- !private ["PSs21IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
+- !private ["PSs25IntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Stride"]
+- !private ["PSs11IntegerType", "_DisabledRangeIndex"]
+- !private ["C12PhotoGurashi20KurumiViewController", "init"]
+- !private ["C12PhotoGurashi20KurumiViewController", "view"]
+- !private ["C12PhotoGurashi21MeguneeViewController", "init"]
+- !private ["C12PhotoGurashi21MeguneeViewController", "view"]
+- !private ["C12PhotoGurashi18MikiViewController", "init"]
+- !private ["C12PhotoGurashi18MikiViewController", "view"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Stride"]
+- !private ["PSo8NSCoding", "CGPoint"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "KurumiViewController"]
+- !private ["PSo8NSCoding", "MeguneeViewController"]
+- !private ["PSo8NSCoding", "MikiViewController"]
+- !private ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "NSLocale"]
+- !private ["PSo8NSCoding", "NSString"]
+- ["PSo8NSCoding", "UIButton"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIFont"]
+- ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIImageView"]
+- !private ["PSo8NSCoding", "YukiViewController"]
+- !private ["PSo8NSCoding", "YuuriViewController"]
+- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "addTarget"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "kurumiButton"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "locale"]
+- !private ["PSo8NSCoding", "magentaColor"]
+- !private ["PSo8NSCoding", "masksToBounds"]
+- ["PSo8NSCoding", "meguneeButton"]
+- ["PSo8NSCoding", "mikiButton"]
+- ["PSo8NSCoding", "onClickButton"]
+- !private ["PSo8NSCoding", "orangeColor"]
+- !private ["PSo8NSCoding", "position"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "purpleColor"]
+- !private ["PSo8NSCoding", "redColor"]
+- !private ["PSo8NSCoding", "setTitle"]
+- !private ["PSo8NSCoding", "setTitleColor"]
+- !private ["PSo8NSCoding", "stringFromDate"]
+- !private ["PSo8NSCoding", "tag"]
+- ["PSo8NSCoding", "timeBoolean"]
+- !private ["PSo8NSCoding", "titleLabel"]
+- ["PSo8NSCoding", "topImage"]
+- ["PSo8NSCoding", "topImageView"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo8NSCoding", "yellowColor"]
+- ["PSo8NSCoding", "yukiButton"]
+- ["PSo8NSCoding", "yuuriButton"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "buttonFontSize"]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "locale"]
+- !private ["PSo9NSCopying", "magentaColor"]
+- !private ["PSo9NSCopying", "orangeColor"]
+- !private ["PSo9NSCopying", "purpleColor"]
+- !private ["PSo9NSCopying", "redColor"]
+- !private ["PSo9NSCopying", "stringFromDate"]
+- !private ["PSo9NSCopying", "systemFontOfSize"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo9NSCopying", "yellowColor"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo15NSDateFormatter", "dateFormat"]
+- !private ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "locale"]
+- !private ["CSo15NSDateFormatter", "stringFromDate"]
+- !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo26NSExtensionRequestHandling", "KurumiViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "MeguneeViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "MikiViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
+- !private ["PSo26NSExtensionRequestHandling", "NSString"]
+- ["PSo26NSExtensionRequestHandling", "UIButton"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
+- ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "YukiViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "YuuriViewController"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "kurumiButton"]
+- ["PSo26NSExtensionRequestHandling", "meguneeButton"]
+- ["PSo26NSExtensionRequestHandling", "mikiButton"]
+- ["PSo26NSExtensionRequestHandling", "onClickButton"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "timeBoolean"]
+- ["PSo26NSExtensionRequestHandling", "topImage"]
+- ["PSo26NSExtensionRequestHandling", "topImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "yukiButton"]
+- ["PSo26NSExtensionRequestHandling", "yuuriButton"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSFormatter", "dateFormat"]
+- !private ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "locale"]
+- !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo8NSLocale", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSNumber", "deinit"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGPoint"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "KurumiViewController"]
+- !private ["CSo8NSObject", "MeguneeViewController"]
+- !private ["CSo8NSObject", "MikiViewController"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSDateFormatter"]
+- !private ["CSo8NSObject", "NSLocale"]
+- !private ["CSo8NSObject", "NSString"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIFont"]
+- ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UInt8"]
+- !private ["CSo8NSObject", "YukiViewController"]
+- !private ["CSo8NSObject", "YuuriViewController"]
+- !private ["CSo8NSObject", "addSubview"]
+- !private ["CSo8NSObject", "addTarget"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "buttonFontSize"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "dateFormat"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "frame"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "kurumiButton"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "locale"]
+- !private ["CSo8NSObject", "magentaColor"]
+- !private ["CSo8NSObject", "masksToBounds"]
+- ["CSo8NSObject", "meguneeButton"]
+- ["CSo8NSObject", "mikiButton"]
+- ["CSo8NSObject", "onClickButton"]
+- !private ["CSo8NSObject", "orangeColor"]
+- !private ["CSo8NSObject", "position"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "purpleColor"]
+- !private ["CSo8NSObject", "redColor"]
+- !private ["CSo8NSObject", "setTitle"]
+- !private ["CSo8NSObject", "setTitleColor"]
+- !private ["CSo8NSObject", "stringFromDate"]
+- !private ["CSo8NSObject", "systemFontOfSize"]
+- !private ["CSo8NSObject", "tag"]
+- ["CSo8NSObject", "timeBoolean"]
+- !private ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "topImage"]
+- ["CSo8NSObject", "topImageView"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["CSo8NSObject", "yellowColor"]
+- ["CSo8NSObject", "yukiButton"]
+- ["CSo8NSObject", "yuuriButton"]
+- !private ["PSo16NSObjectProtocol", "CGPoint"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "KurumiViewController"]
+- !private ["PSo16NSObjectProtocol", "MeguneeViewController"]
+- !private ["PSo16NSObjectProtocol", "MikiViewController"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "NSLocale"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- ["PSo16NSObjectProtocol", "UIButton"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
+- ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIImageView"]
+- !private ["PSo16NSObjectProtocol", "YukiViewController"]
+- !private ["PSo16NSObjectProtocol", "YuuriViewController"]
+- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "buttonFontSize"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "kurumiButton"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "locale"]
+- !private ["PSo16NSObjectProtocol", "magentaColor"]
+- !private ["PSo16NSObjectProtocol", "masksToBounds"]
+- ["PSo16NSObjectProtocol", "meguneeButton"]
+- ["PSo16NSObjectProtocol", "mikiButton"]
+- ["PSo16NSObjectProtocol", "onClickButton"]
+- !private ["PSo16NSObjectProtocol", "orangeColor"]
+- !private ["PSo16NSObjectProtocol", "position"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "purpleColor"]
+- !private ["PSo16NSObjectProtocol", "redColor"]
+- !private ["PSo16NSObjectProtocol", "setTitle"]
+- !private ["PSo16NSObjectProtocol", "setTitleColor"]
+- !private ["PSo16NSObjectProtocol", "stringFromDate"]
+- !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
+- !private ["PSo16NSObjectProtocol", "tag"]
+- ["PSo16NSObjectProtocol", "timeBoolean"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
+- ["PSo16NSObjectProtocol", "topImage"]
+- ["PSo16NSObjectProtocol", "topImageView"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "yellowColor"]
+- ["PSo16NSObjectProtocol", "yukiButton"]
+- ["PSo16NSObjectProtocol", "yuuriButton"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "magentaColor"]
+- !private ["PSo14NSSecureCoding", "orangeColor"]
+- !private ["PSo14NSSecureCoding", "purpleColor"]
+- !private ["PSo14NSSecureCoding", "redColor"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "yellowColor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo7NSValue", "deinit"]
+- !private ["PSs13OptionSetType", "Normal"]
+- !private ["PSs13OptionSetType", "TouchUpInside"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
+- !private ["PSs21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["VSs5Range", "Generator"]
+- !private ["VSs5Range", "deinit"]
+- !private ["VSs14RangeGenerator", "Element"]
+- !private ["PSs16RawRepresentable", "Normal"]
+- !private ["PSs16RawRepresentable", "TouchUpInside"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs14SetAlgebraType", "Normal"]
+- !private ["PSs14SetAlgebraType", "TouchUpInside"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "Stride"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Stride"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Stride"]
+- !private ["PSs10Strideable", "_DisabledRangeIndex"]
+- !private ["SS", "deinit"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tag"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- !private ["PSo12UIAppearance", "addSubview"]
+- !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "font"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "setTitle"]
+- !private ["PSo12UIAppearance", "setTitleColor"]
+- !private ["PSo12UIAppearance", "tag"]
+- !private ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "CGPoint"]
+- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "KurumiViewController"]
+- !private ["PSo21UIAppearanceContainer", "MeguneeViewController"]
+- !private ["PSo21UIAppearanceContainer", "MikiViewController"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- !private ["PSo21UIAppearanceContainer", "NSLocale"]
+- !private ["PSo21UIAppearanceContainer", "NSString"]
+- ["PSo21UIAppearanceContainer", "UIButton"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
+- ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- !private ["PSo21UIAppearanceContainer", "YukiViewController"]
+- !private ["PSo21UIAppearanceContainer", "YuuriViewController"]
+- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "font"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "kurumiButton"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "meguneeButton"]
+- ["PSo21UIAppearanceContainer", "mikiButton"]
+- ["PSo21UIAppearanceContainer", "onClickButton"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "setTitle"]
+- !private ["PSo21UIAppearanceContainer", "setTitleColor"]
+- !private ["PSo21UIAppearanceContainer", "tag"]
+- ["PSo21UIAppearanceContainer", "timeBoolean"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", "topImage"]
+- ["PSo21UIAppearanceContainer", "topImageView"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "yukiButton"]
+- ["PSo21UIAppearanceContainer", "yuuriButton"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "backgroundColor"]
+- !private ["CSo8UIButton", "frame"]
+- ["CSo8UIButton", "init"]
+- !private ["CSo8UIButton", "layer"]
+- !private ["CSo8UIButton", "setTitle"]
+- !private ["CSo8UIButton", "setTitleColor"]
+- !private ["CSo8UIButton", "tag"]
+- !private ["CSo8UIButton", "titleLabel"]
+- !private ["CSo7UIColor", "magentaColor"]
+- !private ["CSo7UIColor", "orangeColor"]
+- !private ["CSo7UIColor", "purpleColor"]
+- !private ["CSo7UIColor", "redColor"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["CSo7UIColor", "yellowColor"]
+- !private ["PSo18UIContentContainer", "CGPoint"]
+- !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["PSo18UIContentContainer", "KurumiViewController"]
+- !private ["PSo18UIContentContainer", "MeguneeViewController"]
+- !private ["PSo18UIContentContainer", "MikiViewController"]
+- !private ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- !private ["PSo18UIContentContainer", "NSLocale"]
+- !private ["PSo18UIContentContainer", "NSString"]
+- ["PSo18UIContentContainer", "UIButton"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIFont"]
+- ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIImageView"]
+- !private ["PSo18UIContentContainer", "YukiViewController"]
+- !private ["PSo18UIContentContainer", "YuuriViewController"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "kurumiButton"]
+- ["PSo18UIContentContainer", "meguneeButton"]
+- ["PSo18UIContentContainer", "mikiButton"]
+- ["PSo18UIContentContainer", "onClickButton"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "timeBoolean"]
+- ["PSo18UIContentContainer", "topImage"]
+- ["PSo18UIContentContainer", "topImageView"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "yukiButton"]
+- ["PSo18UIContentContainer", "yuuriButton"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "backgroundColor"]
+- !private ["CSo9UIControl", "frame"]
+- ["CSo9UIControl", "init"]
+- !private ["CSo9UIControl", "layer"]
+- !private ["CSo9UIControl", "setTitle"]
+- !private ["CSo9UIControl", "setTitleColor"]
+- !private ["CSo9UIControl", "tag"]
+- !private ["CSo9UIControl", "titleLabel"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "addSubview"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "font"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "setTitle"]
+- !private ["PSo17UICoordinateSpace", "setTitleColor"]
+- !private ["PSo17UICoordinateSpace", "tag"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
+- !private ["PSo13UIDynamicItem", "addSubview"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "font"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "setTitle"]
+- !private ["PSo13UIDynamicItem", "setTitleColor"]
+- !private ["PSo13UIDynamicItem", "tag"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "CGPoint"]
+- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "KurumiViewController"]
+- !private ["PSo18UIFocusEnvironment", "MeguneeViewController"]
+- !private ["PSo18UIFocusEnvironment", "MikiViewController"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
+- !private ["PSo18UIFocusEnvironment", "NSDateFormatter"]
+- !private ["PSo18UIFocusEnvironment", "NSLocale"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- ["PSo18UIFocusEnvironment", "UIButton"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
+- ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIImageView"]
+- !private ["PSo18UIFocusEnvironment", "YukiViewController"]
+- !private ["PSo18UIFocusEnvironment", "YuuriViewController"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "font"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "kurumiButton"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "meguneeButton"]
+- ["PSo18UIFocusEnvironment", "mikiButton"]
+- ["PSo18UIFocusEnvironment", "onClickButton"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "setTitle"]
+- !private ["PSo18UIFocusEnvironment", "setTitleColor"]
+- !private ["PSo18UIFocusEnvironment", "tag"]
+- ["PSo18UIFocusEnvironment", "timeBoolean"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
+- ["PSo18UIFocusEnvironment", "topImage"]
+- ["PSo18UIFocusEnvironment", "topImageView"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "yukiButton"]
+- ["PSo18UIFocusEnvironment", "yuuriButton"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "buttonFontSize"]
+- !private ["CSo6UIFont", "systemFontOfSize"]
+- ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "init"]
+- !private ["CSo11UIImageView", "layer"]
+- !private ["CSo7UILabel", "font"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CGPoint"]
+- !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "KurumiViewController"]
+- !private ["CSo11UIResponder", "MeguneeViewController"]
+- !private ["CSo11UIResponder", "MikiViewController"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSDateFormatter"]
+- !private ["CSo11UIResponder", "NSLocale"]
+- !private ["CSo11UIResponder", "NSString"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UInt8"]
+- !private ["CSo11UIResponder", "YukiViewController"]
+- !private ["CSo11UIResponder", "YuuriViewController"]
+- !private ["CSo11UIResponder", "addSubview"]
+- !private ["CSo11UIResponder", "addTarget"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "font"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "kurumiButton"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "meguneeButton"]
+- ["CSo11UIResponder", "mikiButton"]
+- ["CSo11UIResponder", "onClickButton"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "setTitle"]
+- !private ["CSo11UIResponder", "setTitleColor"]
+- !private ["CSo11UIResponder", "tag"]
+- ["CSo11UIResponder", "timeBoolean"]
+- !private ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "topImage"]
+- ["CSo11UIResponder", "topImageView"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "yukiButton"]
+- ["CSo11UIResponder", "yuuriButton"]
+- !private ["PSo16UIStateRestoring", "CGPoint"]
+- !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["PSo16UIStateRestoring", "KurumiViewController"]
+- !private ["PSo16UIStateRestoring", "MeguneeViewController"]
+- !private ["PSo16UIStateRestoring", "MikiViewController"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- !private ["PSo16UIStateRestoring", "NSLocale"]
+- !private ["PSo16UIStateRestoring", "NSString"]
+- ["PSo16UIStateRestoring", "UIButton"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
+- ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIImageView"]
+- !private ["PSo16UIStateRestoring", "YukiViewController"]
+- !private ["PSo16UIStateRestoring", "YuuriViewController"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "kurumiButton"]
+- ["PSo16UIStateRestoring", "meguneeButton"]
+- ["PSo16UIStateRestoring", "mikiButton"]
+- ["PSo16UIStateRestoring", "onClickButton"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "timeBoolean"]
+- ["PSo16UIStateRestoring", "topImage"]
+- ["PSo16UIStateRestoring", "topImageView"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "yukiButton"]
+- ["PSo16UIStateRestoring", "yuuriButton"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "CGPoint"]
+- !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "KurumiViewController"]
+- !private ["PSo18UITraitEnvironment", "MeguneeViewController"]
+- !private ["PSo18UITraitEnvironment", "MikiViewController"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- !private ["PSo18UITraitEnvironment", "NSLocale"]
+- !private ["PSo18UITraitEnvironment", "NSString"]
+- ["PSo18UITraitEnvironment", "UIButton"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
+- ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIImageView"]
+- !private ["PSo18UITraitEnvironment", "YukiViewController"]
+- !private ["PSo18UITraitEnvironment", "YuuriViewController"]
+- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "font"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "kurumiButton"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "meguneeButton"]
+- ["PSo18UITraitEnvironment", "mikiButton"]
+- ["PSo18UITraitEnvironment", "onClickButton"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "setTitle"]
+- !private ["PSo18UITraitEnvironment", "setTitleColor"]
+- !private ["PSo18UITraitEnvironment", "tag"]
+- ["PSo18UITraitEnvironment", "timeBoolean"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", "topImage"]
+- ["PSo18UITraitEnvironment", "topImageView"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "yukiButton"]
+- ["PSo18UITraitEnvironment", "yuuriButton"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addSubview"]
+- !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "font"]
+- !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "setTitle"]
+- !private ["CSo6UIView", "setTitleColor"]
+- !private ["CSo6UIView", "tag"]
+- !private ["CSo6UIView", "titleLabel"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CGPoint"]
+- !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "KurumiViewController"]
+- !private ["CSo16UIViewController", "MeguneeViewController"]
+- !private ["CSo16UIViewController", "MikiViewController"]
+- !private ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSDateFormatter"]
+- !private ["CSo16UIViewController", "NSLocale"]
+- !private ["CSo16UIViewController", "NSString"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIFont"]
+- ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UInt8"]
+- !private ["CSo16UIViewController", "YukiViewController"]
+- !private ["CSo16UIViewController", "YuuriViewController"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "kurumiButton"]
+- ["CSo16UIViewController", "meguneeButton"]
+- ["CSo16UIViewController", "mikiButton"]
+- ["CSo16UIViewController", "onClickButton"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "timeBoolean"]
+- ["CSo16UIViewController", "topImage"]
+- ["CSo16UIViewController", "topImageView"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "yukiButton"]
+- ["CSo16UIViewController", "yuuriButton"]
+- ["CSo16UIViewController", ""]
+- !private ["VSs5UInt8", "Distance"]
+- !private ["VSs5UInt8", "_DisabledRangeIndex"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs19UnsignedIntegerType", "Distance"]
+- !private ["PSs19UnsignedIntegerType", "_DisabledRangeIndex"]
+- ["C12PhotoGurashi14ViewController", "Bool"]
+- !private ["C12PhotoGurashi14ViewController", "CGPoint"]
+- !private ["C12PhotoGurashi14ViewController", "CGRectMake"]
+- !private ["C12PhotoGurashi14ViewController", "KurumiViewController"]
+- !private ["C12PhotoGurashi14ViewController", "MeguneeViewController"]
+- !private ["C12PhotoGurashi14ViewController", "MikiViewController"]
+- !private ["C12PhotoGurashi14ViewController", "NSDate"]
+- !private ["C12PhotoGurashi14ViewController", "NSDateFormatter"]
+- !private ["C12PhotoGurashi14ViewController", "NSLocale"]
+- !private ["C12PhotoGurashi14ViewController", "NSString"]
+- ["C12PhotoGurashi14ViewController", "UIButton"]
+- !private ["C12PhotoGurashi14ViewController", "UIColor"]
+- !private ["C12PhotoGurashi14ViewController", "UIControlState"]
+- !private ["C12PhotoGurashi14ViewController", "UIFont"]
+- ["C12PhotoGurashi14ViewController", "UIImage"]
+- ["C12PhotoGurashi14ViewController", "UIImageView"]
+- ["C12PhotoGurashi14ViewController", "UInt8"]
+- !private ["C12PhotoGurashi14ViewController", "YukiViewController"]
+- !private ["C12PhotoGurashi14ViewController", "YuuriViewController"]
+- ["C12PhotoGurashi14ViewController", "deinit"]
+- ["C12PhotoGurashi14ViewController", "didReceiveMemoryWarning"]
+- ["C12PhotoGurashi14ViewController", "init"]
+- ["C12PhotoGurashi14ViewController", "kurumiButton"]
+- ["C12PhotoGurashi14ViewController", "meguneeButton"]
+- ["C12PhotoGurashi14ViewController", "mikiButton"]
+- ["C12PhotoGurashi14ViewController", "onClickButton"]
+- !private ["C12PhotoGurashi14ViewController", "presentViewController"]
+- !private ["C12PhotoGurashi14ViewController", "print"]
+- ["C12PhotoGurashi14ViewController", "timeBoolean"]
+- ["C12PhotoGurashi14ViewController", "topImage"]
+- !private ["C12PhotoGurashi14ViewController", "topImageView"]
+- !private ["C12PhotoGurashi14ViewController", "view"]
+- ["C12PhotoGurashi14ViewController", "viewDidLoad"]
+- ["C12PhotoGurashi14ViewController", "yukiButton"]
+- ["C12PhotoGurashi14ViewController", "yuuriButton"]
+- !private ["C12PhotoGurashi18YukiViewController", "init"]
+- !private ["C12PhotoGurashi18YukiViewController", "view"]
+- !private ["C12PhotoGurashi19YuuriViewController", "init"]
+- !private ["C12PhotoGurashi19YuuriViewController", "view"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "Stride"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["PSs19_CVarArgAlignedType", "Stride"]
+- !private ["PSs22_CVarArgPassedAsDouble", "Stride"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "magentaColor"]
+- !private ["PSs24_ColorLiteralConvertible", "orangeColor"]
+- !private ["PSs24_ColorLiteralConvertible", "purpleColor"]
+- !private ["PSs24_ColorLiteralConvertible", "redColor"]
+- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
+- !private ["PSs24_ColorLiteralConvertible", "yellowColor"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "Distance"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "_DisabledRangeIndex"]
+- ["PSs24_ImageLiteralConvertible", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Stride"]
+- !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
+- !private ["PSs22_IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Stride"]
+- !private ["PSs12_IntegerType", "_DisabledRangeIndex"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
+- !private ["PSs22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Stride"]
+- !private ["PSs12_Reflectable", "_DisabledRangeIndex"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "addSubview"]
+- !private ["PSs12_Reflectable", "addTarget"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
+- !private ["PSs12_Reflectable", "bounds"]
+- !private ["PSs12_Reflectable", "font"]
+- !private ["PSs12_Reflectable", "frame"]
+- !private ["PSs12_Reflectable", "height"]
+- !private ["PSs12_Reflectable", "image"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "layer"]
+- !private ["PSs12_Reflectable", "setTitle"]
+- !private ["PSs12_Reflectable", "setTitleColor"]
+- !private ["PSs12_Reflectable", "tag"]
+- !private ["PSs12_Reflectable", "titleLabel"]
+- !private ["PSs12_Reflectable", "width"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "Stride"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Stride"]
+- !private ["PSs11_Strideable", "_DisabledRangeIndex"]
+- !private ["PSs18_StringElementType", "Distance"]
+- !private ["PSs18_StringElementType", "_DisabledRangeIndex"]
+depends-nominal:
 - !private "PSs16AbsoluteValuable"
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- "PSs11CVarArgType"
+- !private "VSs14ClosedInterval"
+- !private "PSs14CollectionType"
+- !private "C12PhotoGurashi20CommonViewController"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
 - !private "Sd"
-- !private "PSs10Strideable"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C12PhotoGurashi20KurumiViewController"
+- !private "C12PhotoGurashi21MeguneeViewController"
+- !private "C12PhotoGurashi18MikiViewController"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo15NSDateFormatter"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSFormatter"
 - !private "CSo8NSLocale"
-- !private "PSs12SequenceType"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo7NSValue"
+- !private "PSs13OptionSetType"
 - !private "Sq"
-- !private "PSs14DebugPrintable"
-- !private "PSs19UnsignedIntegerType"
-- !private "C12PhotoGurashi19YuuriViewController"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
 - !private "VSs14RangeGenerator"
-- "CSo7UIImage"
-- !private "PSs14_Sequence_Type"
+- !private "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
 - "CSo9UIControl"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreAudio.swiftmodule"
+- !private "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
+- "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "CSo16UIViewController"
+- !private "VSs5UInt8"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs19UnsignedIntegerType"
+- "C12PhotoGurashi14ViewController"
+- !private "C12PhotoGurashi18YukiViewController"
+- !private "C12PhotoGurashi19YuuriViewController"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
+- !private "PSs28_DisallowMixedSignArithmetic"
+- "PSs24_ImageLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+- !private "PSs18_StringElementType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+interface-hash: "8183dd1bf65811b15f068e167f96d8e4"
