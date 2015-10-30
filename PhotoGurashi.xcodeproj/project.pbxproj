@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6618F14A1BE3FA0400B04088 /* AkkeyLabLogoWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */; };
 		6695E9F21BA2A65200064000 /* MeguneeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695E9F11BA2A65200064000 /* MeguneeViewController.swift */; };
 		669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DA1B88B3BD00005A1C /* AppDelegate.swift */; };
 		669760DD1B88B3BD00005A1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DC1B88B3BD00005A1C /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AkkeyLabLogoWeb.png; sourceTree = "<group>"; };
 		6695E9F11BA2A65200064000 /* MeguneeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeguneeViewController.swift; sourceTree = "<group>"; };
 		669760D51B88B3BD00005A1C /* PhotoGurashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGurashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669760D91B88B3BD00005A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,9 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6618F1441BE3F99400B04088 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		669760CC1B88B3BD00005A1C = {
 			isa = PBXGroup;
 			children = (
+				6618F1441BE3F99400B04088 /* Image */,
 				669760D71B88B3BD00005A1C /* PhotoGurashi */,
 				669760ED1B88B3BD00005A1C /* PhotoGurashiTests */,
 				669760D61B88B3BD00005A1C /* Products */,
@@ -217,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				669761011B898D1600005A1C /* image in Resources */,
+				6618F14A1BE3FA0400B04088 /* AkkeyLabLogoWeb.png in Resources */,
 				669760E01B88B3BD00005A1C /* Main.storyboard in Resources */,
 				669760E51B88B3BD00005A1C /* LaunchScreen.xib in Resources */,
 				669760E21B88B3BD00005A1C /* Images.xcassets in Resources */,
