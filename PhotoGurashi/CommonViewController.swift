@@ -121,7 +121,7 @@ class CommonViewController: UIViewController {
             cameraInfo = !cameraInfo
             viewDidLoad()
         default:
-            print("ERROR")
+            print("ERROR", terminator: "")
         }
         
     }
@@ -143,14 +143,20 @@ class CommonViewController: UIViewController {
             }
             
         }
-        
-        let videoInput = AVCaptureDeviceInput.deviceInputWithDevice(myDevice, error: nil) as! AVCaptureDeviceInput
+        //let videoInput = (try! AVCaptureDeviceInput.deviceInputWithDevice(myDevice))
+        let videoInput: AVCaptureInput!
+        do{
+            videoInput = try AVCaptureDeviceInput.init(device: myDevice)
+        }catch{
+            videoInput = nil
+        }
         mySession.addInput(videoInput)
         
         myImageOutput = AVCaptureStillImageOutput()
         mySession.addOutput(myImageOutput)
         
-        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as! AVCaptureVideoPreviewLayer
+        //let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as AVCaptureVideoPreviewLayer
+        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session: mySession)
         myVideoLayer.frame = self.view.bounds
         myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         //Add View

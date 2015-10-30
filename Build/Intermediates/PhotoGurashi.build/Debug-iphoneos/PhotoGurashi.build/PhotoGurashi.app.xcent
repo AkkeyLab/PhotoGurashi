@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>2E5E462W28.com.akkeylab.PhotoGurashi</string>
+	<string>8A3KGY7724.com.akkeylab.PhotoGurashi</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>2E5E462W28</string>
+	<string>8A3KGY7724</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>2E5E462W28.com.akkeylab.PhotoGurashi</string>
+		<string>8A3KGY7724.com.akkeylab.PhotoGurashi</string>
 	</array>
 </dict>
 </plist>

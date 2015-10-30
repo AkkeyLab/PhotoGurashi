@@ -11,7 +11,7 @@ import UIKit
 class YuuriViewController: CommonViewController {
     
     //Initializer
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         changeImage(UIImage(named: "image/yuuri.png")!)
     }
