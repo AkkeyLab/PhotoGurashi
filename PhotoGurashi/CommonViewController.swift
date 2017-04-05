@@ -28,7 +28,7 @@ class CommonViewController: UIViewController {
     //****END****
     
     //Initializer
-    func changeImage(image: UIImage){
+    func changeImage(_ image: UIImage){
         self.provisionalImage = image
     }
     
@@ -57,8 +57,8 @@ class CommonViewController: UIViewController {
         cameraSetting()
         
         //Add provisional Image
-        provisionalImageView = UIImageView(frame: CGRectMake(0, 0, (self.view.bounds.width  / 2) + (self.view.bounds.width  / 4),
-                                                                   (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
+        provisionalImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: (self.view.bounds.width  / 2) + (self.view.bounds.width  / 4),
+                                                                   height: (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
         
         //memo: Move to field
         //let provisionalImage = UIImage(named: "image/yuki.png")
@@ -69,46 +69,46 @@ class CommonViewController: UIViewController {
         self.view.addSubview(provisionalImageView)
         
         //ex) let cameraButton = UIButton(frame: CGRectMake(0,0,120,50))
-        cameraButton.frame = CGRectMake(0, 0, 120, 50)//size
-        cameraButton.backgroundColor = UIColor.redColor();
+        cameraButton.frame = CGRect(x: 0, y: 0, width: 120, height: 50)//size
+        cameraButton.backgroundColor = UIColor.red;
         cameraButton.layer.masksToBounds = true
-        cameraButton.setTitle("撮影", forState: .Normal)
+        cameraButton.setTitle("撮影", for: UIControlState())
         cameraButton.layer.cornerRadius = 20.0
         cameraButton.layer.position = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height - 50)
-        cameraButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        cameraButton.addTarget(self, action: #selector(CommonViewController.onClickButton(_:)), for: .touchUpInside)
         cameraButton.tag = 0//Add button tag
         //Add View
         self.view.addSubview(cameraButton)
         
         //ex) let exitButton = UIButton(frame: CGRectMake(0,0,80,80))
-        exitButton.frame = CGRectMake(0, 0, 50, 50)//size
-        exitButton.backgroundColor = UIColor.cyanColor()
+        exitButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)//size
+        exitButton.backgroundColor = UIColor.cyan
         exitButton.layer.masksToBounds = true
-        exitButton.setTitle("戻る", forState: .Normal)
-        exitButton.titleLabel?.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
-        exitButton.setTitleColor(UIColor.darkGrayColor(), forState: UIControlState.Normal)
+        exitButton.setTitle("戻る", for: UIControlState())
+        exitButton.titleLabel?.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
+        exitButton.setTitleColor(UIColor.darkGray, for: UIControlState())
         exitButton.layer.cornerRadius = 10.0//edge
         exitButton.layer.position = CGPoint(x: 50, y: self.view.bounds.height - 50)
-        exitButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        exitButton.addTarget(self, action: #selector(CommonViewController.onClickButton(_:)), for: .touchUpInside)
         exitButton.tag = 1
         self.view.addSubview(exitButton)
         
         //ex) let changeCameraButton = UIButton(frame: CGRectMake(0,0,80,80))
-        changeCameraButton.frame = CGRectMake(0, 0, 50, 50)//size
-        changeCameraButton.backgroundColor = UIColor.grayColor()
+        changeCameraButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)//size
+        changeCameraButton.backgroundColor = UIColor.gray
         changeCameraButton.layer.masksToBounds = true
-        changeCameraButton.setTitle("変更", forState: .Normal)
-        changeCameraButton.titleLabel?.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
-        changeCameraButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        changeCameraButton.setTitle("変更", for: UIControlState())
+        changeCameraButton.titleLabel?.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
+        changeCameraButton.setTitleColor(UIColor.white, for: UIControlState())
         changeCameraButton.layer.cornerRadius = 25.0//edge
         changeCameraButton.layer.position = CGPoint(x: self.view.bounds.width - 50, y: 50)
-        changeCameraButton.addTarget(self, action: "onClickButton:", forControlEvents: .TouchUpInside)
+        changeCameraButton.addTarget(self, action: #selector(CommonViewController.onClickButton(_:)), for: .touchUpInside)
         changeCameraButton.tag = 2
         self.view.addSubview(changeCameraButton)
     }
     
     //Button event
-    func onClickButton(sender: UIButton){
+    func onClickButton(_ sender: UIButton){
         
         switch sender.tag{
         case 0:
@@ -116,7 +116,7 @@ class CommonViewController: UIViewController {
             outputImage()
         case 1:
             //Lets exit
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         case 2:
             cameraInfo = !cameraInfo
             viewDidLoad()
@@ -131,13 +131,13 @@ class CommonViewController: UIViewController {
         mySession = AVCaptureSession()
         
         let devices = AVCaptureDevice.devices()//Add all devices
-        for device in devices{
+        for device in devices!{
             if(cameraInfo){//Select back camera
-                if(device.position == AVCaptureDevicePosition.Back){
+                if((device as AnyObject).position == AVCaptureDevicePosition.back){
                     myDevice = device as! AVCaptureDevice
                 }
             }else{//Select front camera
-                if(device.position == AVCaptureDevicePosition.Front){
+                if((device as AnyObject).position == AVCaptureDevicePosition.front){
                     myDevice = device as! AVCaptureDevice
                 }
             }
@@ -168,33 +168,33 @@ class CommonViewController: UIViewController {
     func outputImage(){
         
         //It is connected to the video output
-        let myVideoConnection = myImageOutput.connectionWithMediaType(AVMediaTypeVideo)
+        let myVideoConnection = myImageOutput.connection(withMediaType: AVMediaTypeVideo)
         
         //Get the image from the connection
-        self.myImageOutput.captureStillImageAsynchronouslyFromConnection(myVideoConnection, completionHandler: { (imageDataBuffer, error) -> Void in
+        self.myImageOutput.captureStillImageAsynchronously(from: myVideoConnection, completionHandler: { (imageDataBuffer, error) -> Void in
             //Convert DataBuffer of the acquired Image to Jpeg.
-            let myImageData : NSData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
+            let myImageData : Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
             let myImage : UIImage = UIImage(data: myImageData)!
             
             //Image synthesis (memo: Move to field)
             //let provisionalImage = UIImage(named: "image/yuki.png")
             //Main size is take image (No conversion take-image-size)
-            UIGraphicsBeginImageContext(CGSizeMake(myImage.size.width, myImage.size.height))
-            myImage.drawAtPoint(CGPointMake(0, 0))
+            UIGraphicsBeginImageContext(CGSize(width: myImage.size.width, height: myImage.size.height))
+            myImage.draw(at: CGPoint(x: 0, y: 0))
             //Synthesis image
             let provisionalSizeX = (myImage.size.width  / 2) + (myImage.size.width  / 4)
             let provisionalSizeY = (myImage.size.height / 2) + (myImage.size.height / 4)
-            self.provisionalImage.drawInRect(CGRectMake(myImage.size.width  - provisionalSizeX,
-                                                        myImage.size.height - provisionalSizeY,
-                                                        provisionalSizeX,
-                                                        provisionalSizeY))
+            self.provisionalImage.draw(in: CGRect(x: myImage.size.width  - provisionalSizeX,
+                                                        y: myImage.size.height - provisionalSizeY,
+                                                        width: provisionalSizeX,
+                                                        height: provisionalSizeY))
             //Remake image
             let reMyImage = UIGraphicsGetImageFromCurrentImageContext()
             //End synthesis
             UIGraphicsEndImageContext()
             
             //Add album
-            UIImageWriteToSavedPhotosAlbum(reMyImage, self, nil, nil)
+            UIImageWriteToSavedPhotosAlbum(reMyImage!, self, nil, nil)
             
         })
         
