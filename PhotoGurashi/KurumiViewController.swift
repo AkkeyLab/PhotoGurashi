@@ -16,7 +16,7 @@ class KurumiViewController: CommonViewController {
         changeImage(UIImage(named: "image/kurumi.png")!)
     }
     
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
         changeImage(UIImage(named: "image/kurumi.png")!)
     }
