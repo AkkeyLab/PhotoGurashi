@@ -11,27 +11,27 @@ import CoreImage
 import AVFoundation
 
 class CommonViewController: UIViewController {
-    
+
     //***Field***
-    var mySession:            AVCaptureSession!
-    var myDevice:             AVCaptureDevice!
-    var myImageOutput:        AVCaptureStillImageOutput!
-    let cameraButton:         UIButton = UIButton()
-    let exitButton:           UIButton = UIButton()
-    let changeCameraButton:   UIButton = UIButton()
+    var mySession: AVCaptureSession!
+    var myDevice: AVCaptureDevice!
+    var myImageOutput: AVCaptureStillImageOutput!
+    let cameraButton: UIButton = UIButton()
+    let exitButton: UIButton = UIButton()
+    let changeCameraButton: UIButton = UIButton()
     var provisionalImageView: UIImageView!
-    var provisionalImage:     UIImage = UIImage(named: "image/yuki.png")!
-    
-    var cameraInfo:           Bool = true
+    var provisionalImage: UIImage = UIImage(named: "image/yuki.png")!
+
+    var cameraInfo: Bool = true
     //Take a picture
-    var takeInputImage:       CIImage!
+    var takeInputImage: CIImage!
     //****END****
-    
+
     //Initializer
-    func changeImage(_ image: UIImage){
+    func changeImage(_ image: UIImage) {
         self.provisionalImage = image
     }
-    
+
     /*
     ***Session list***
     
@@ -49,25 +49,25 @@ class CommonViewController: UIViewController {
     3->CameraButton
     ********************
     */
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //Camera
         cameraSetting()
-        
+
         //Add provisional Image
-        provisionalImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: (self.view.bounds.width  / 2) + (self.view.bounds.width  / 4),
-                                                                   height: (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
-        
+        provisionalImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: (self.view.bounds.width / 2) + (self.view.bounds.width / 4),
+                                                         height: (self.view.bounds.height / 2) + (self.view.bounds.height / 4)))
+
         //memo: Move to field
         //let provisionalImage = UIImage(named: "image/yuki.png")
         provisionalImageView.image = provisionalImage
-        provisionalImageView.layer.position = CGPoint(x: (self.view.bounds.width  / 2) + (self.view.bounds.width  / 8),
+        provisionalImageView.layer.position = CGPoint(x: (self.view.bounds.width / 2) + (self.view.bounds.width / 8),
                                                       y: (self.view.bounds.height / 2) + (self.view.bounds.height / 8))
         //Add View
         self.view.addSubview(provisionalImageView)
-        
+
         //ex) let cameraButton = UIButton(frame: CGRectMake(0,0,120,50))
         cameraButton.frame = CGRect(x: 0, y: 0, width: 120, height: 50)//size
         cameraButton.backgroundColor = UIColor.red;
@@ -79,7 +79,7 @@ class CommonViewController: UIViewController {
         cameraButton.tag = 0//Add button tag
         //Add View
         self.view.addSubview(cameraButton)
-        
+
         //ex) let exitButton = UIButton(frame: CGRectMake(0,0,80,80))
         exitButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)//size
         exitButton.backgroundColor = UIColor.cyan
@@ -92,7 +92,7 @@ class CommonViewController: UIViewController {
         exitButton.addTarget(self, action: #selector(CommonViewController.onClickButton(_:)), for: .touchUpInside)
         exitButton.tag = 1
         self.view.addSubview(exitButton)
-        
+
         //ex) let changeCameraButton = UIButton(frame: CGRectMake(0,0,80,80))
         changeCameraButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)//size
         changeCameraButton.backgroundColor = UIColor.gray
@@ -106,11 +106,11 @@ class CommonViewController: UIViewController {
         changeCameraButton.tag = 2
         self.view.addSubview(changeCameraButton)
     }
-    
+
     //Button event
-    func onClickButton(_ sender: UIButton){
-        
-        switch sender.tag{
+    func onClickButton(_ sender: UIButton) {
+
+        switch sender.tag {
         case 0:
             //Lets output image
             outputImage()
@@ -123,40 +123,40 @@ class CommonViewController: UIViewController {
         default:
             print("ERROR", terminator: "")
         }
-        
+
     }
-    
-    func cameraSetting(){
-        
+
+    func cameraSetting() {
+
         mySession = AVCaptureSession()
-        
+
         let devices = AVCaptureDevice.devices()//Add all devices
-        for device in devices!{
-            if(cameraInfo){//Select back camera
-                if((device as AnyObject).position == AVCaptureDevicePosition.back){
+        for device in devices! {
+            if(cameraInfo) { //Select back camera
+                if((device as AnyObject).position == AVCaptureDevicePosition.back) {
                     myDevice = device as! AVCaptureDevice
                 }
-            }else{//Select front camera
-                if((device as AnyObject).position == AVCaptureDevicePosition.front){
+            } else { //Select front camera
+                if((device as AnyObject).position == AVCaptureDevicePosition.front) {
                     myDevice = device as! AVCaptureDevice
                 }
             }
-            
+
         }
         //let videoInput = (try! AVCaptureDeviceInput.deviceInputWithDevice(myDevice))
         let videoInput: AVCaptureInput!
-        do{
+        do {
             videoInput = try AVCaptureDeviceInput.init(device: myDevice)
-        }catch{
+        } catch {
             videoInput = nil
         }
         mySession.addInput(videoInput)
-        
+
         myImageOutput = AVCaptureStillImageOutput()
         mySession.addOutput(myImageOutput)
-        
+
         //let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(mySession) as AVCaptureVideoPreviewLayer
-        let myVideoLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session: mySession)
+        let myVideoLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session: mySession)
         myVideoLayer.frame = self.view.bounds
         myVideoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         //Add View
@@ -164,47 +164,47 @@ class CommonViewController: UIViewController {
 
         mySession.startRunning()
     }
-    
-    func outputImage(){
-        
+
+    func outputImage() {
+
         //It is connected to the video output
         let myVideoConnection = myImageOutput.connection(withMediaType: AVMediaTypeVideo)
-        
+
         //Get the image from the connection
         self.myImageOutput.captureStillImageAsynchronously(from: myVideoConnection, completionHandler: { (imageDataBuffer, error) -> Void in
-            //Convert DataBuffer of the acquired Image to Jpeg.
-            let myImageData : Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-            let myImage : UIImage = UIImage(data: myImageData)!
-            
-            //Image synthesis (memo: Move to field)
-            //let provisionalImage = UIImage(named: "image/yuki.png")
-            //Main size is take image (No conversion take-image-size)
-            UIGraphicsBeginImageContext(CGSize(width: myImage.size.width, height: myImage.size.height))
-            myImage.draw(at: CGPoint(x: 0, y: 0))
-            //Synthesis image
-            let provisionalSizeX = (myImage.size.width  / 2) + (myImage.size.width  / 4)
-            let provisionalSizeY = (myImage.size.height / 2) + (myImage.size.height / 4)
-            self.provisionalImage.draw(in: CGRect(x: myImage.size.width  - provisionalSizeX,
-                                                        y: myImage.size.height - provisionalSizeY,
-                                                        width: provisionalSizeX,
-                                                        height: provisionalSizeY))
-            //Remake image
-            let reMyImage = UIGraphicsGetImageFromCurrentImageContext()
-            //End synthesis
-            UIGraphicsEndImageContext()
-            
-            //Add album
-            UIImageWriteToSavedPhotosAlbum(reMyImage!, self, nil, nil)
-            
+        //Convert DataBuffer of the acquired Image to Jpeg.
+        let myImageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
+        let myImage: UIImage = UIImage(data: myImageData)!
+
+        //Image synthesis (memo: Move to field)
+        //let provisionalImage = UIImage(named: "image/yuki.png")
+        //Main size is take image (No conversion take-image-size)
+        UIGraphicsBeginImageContext(CGSize(width: myImage.size.width, height: myImage.size.height))
+        myImage.draw(at: CGPoint(x: 0, y: 0))
+        //Synthesis image
+        let provisionalSizeX = (myImage.size.width / 2) + (myImage.size.width / 4)
+        let provisionalSizeY = (myImage.size.height / 2) + (myImage.size.height / 4)
+        self.provisionalImage.draw(in: CGRect(x: myImage.size.width - provisionalSizeX,
+                                              y: myImage.size.height - provisionalSizeY,
+                                              width: provisionalSizeX,
+                                              height: provisionalSizeY))
+        //Remake image
+        let reMyImage = UIGraphicsGetImageFromCurrentImageContext()
+        //End synthesis
+        UIGraphicsEndImageContext()
+
+        //Add album
+        UIImageWriteToSavedPhotosAlbum(reMyImage!, self, nil, nil)
+
         })
-        
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
