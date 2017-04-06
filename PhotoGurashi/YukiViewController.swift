@@ -9,34 +9,34 @@
 import UIKit
 
 class YukiViewController: CommonViewController {
-    
+
     //Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         changeImage(UIImage(named: "image/yuki.png")!)
     }
-    
+
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
         changeImage(UIImage(named: "image/yuki.png")!)
     }
-    
+
     convenience init() {
         self.init(nibName: nil, bundle: nil)
     }
     //END
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation

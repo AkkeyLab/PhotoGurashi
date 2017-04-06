@@ -9,23 +9,23 @@
 import UIKit
 
 class YuuriViewController: CommonViewController {
-    
+
     //Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         changeImage(UIImage(named: "image/yuuri.png")!)
     }
-    
+
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
         changeImage(UIImage(named: "image/yuuri.png")!)
     }
-    
+
     convenience init() {
         self.init(nibName: nil, bundle: nil)
     }
     //END
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +36,7 @@ class YuuriViewController: CommonViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
