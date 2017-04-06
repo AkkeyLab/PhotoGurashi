@@ -1,5 +1,5 @@
 //
-//  MikiViewController.swift
+//  KurumiViewController.swift
 //  PhotoGurashi
 //
 //  Created by 板谷晃良 on 2015/08/25.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class MikiViewController: CommonViewController {
+class KurumiViewController: CommonViewController {
 
     //Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        changeImage(UIImage(named: "image/miki.png")!)
+        changeImage(UIImage(named: "stamp_kurumi")!)
     }
 
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
-        changeImage(UIImage(named: "image/miki.png")!)
+        changeImage(UIImage(named: "stamp_kurumi")!)
     }
 
     convenience init() {

@@ -13,12 +13,12 @@ class YukiViewController: CommonViewController {
     //Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        changeImage(UIImage(named: "image/yuki.png")!)
+        changeImage(UIImage(named: "stamp_yuki")!)
     }
 
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
-        changeImage(UIImage(named: "image/yuki.png")!)
+        changeImage(UIImage(named: "stamp_yuki")!)
     }
 
     convenience init() {

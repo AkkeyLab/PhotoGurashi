@@ -1,24 +1,24 @@
 //
-//  MeguneeViewController.swift
+//  YuuriViewController.swift
 //  PhotoGurashi
 //
-//  Created by 板谷晃良 on 2015/09/11.
+//  Created by 板谷晃良 on 2015/08/25.
 //  Copyright (c) 2015年 AkkeyLab. All rights reserved.
 //
 
 import UIKit
 
-class MeguneeViewController: CommonViewController {
+class YuuriViewController: CommonViewController {
 
     //Initializer
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        changeImage(UIImage(named: "image/megunee.png")!)
+        changeImage(UIImage(named: "stamp_yuuri")!)
     }
 
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nil, bundle: nil)
-        changeImage(UIImage(named: "image/megunee.png")!)
+        changeImage(UIImage(named: "stamp_yuuri")!)
     }
 
     convenience init() {
