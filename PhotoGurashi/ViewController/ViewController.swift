@@ -23,9 +23,9 @@ class ViewController: UIViewController {
 
         //Change top image
         if(timeBoolean(0, goalTime: 4)) {
-            topImage = UIImage(named: "image/topImage_darkness.jpg")!
+            topImage = UIImage(named: "top_default")!
         } else {
-            topImage = UIImage(named: "image/topImage.jpg")!
+            topImage = UIImage(named: "top_darkness")!
         }
 
         topImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))

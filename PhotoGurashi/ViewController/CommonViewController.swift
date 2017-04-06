@@ -20,7 +20,7 @@ class CommonViewController: UIViewController {
     let exitButton: UIButton = UIButton()
     let changeCameraButton: UIButton = UIButton()
     var provisionalImageView: UIImageView!
-    var provisionalImage: UIImage = UIImage(named: "image/yuki.png")!
+    var provisionalImage: UIImage = UIImage(named: "stamp_yuki")!
 
     var cameraInfo: Bool = true
     //Take a picture
