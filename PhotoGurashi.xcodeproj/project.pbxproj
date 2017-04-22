@@ -13,13 +13,8 @@
 		669760E21B88B3BD00005A1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669760E11B88B3BD00005A1C /* Images.xcassets */; };
 		669760E51B88B3BD00005A1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669760E31B88B3BD00005A1C /* LaunchScreen.xib */; };
 		669760F11B88B3BD00005A1C /* PhotoGurashiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760F01B88B3BD00005A1C /* PhotoGurashiTests.swift */; };
-		EAA2AEAD1E9653320081190C /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA61E9653320081190C /* CommonViewController.swift */; };
-		EAA2AEAE1E9653320081190C /* KurumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA71E9653320081190C /* KurumiViewController.swift */; };
-		EAA2AEAF1E9653320081190C /* MeguneeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA81E9653320081190C /* MeguneeViewController.swift */; };
-		EAA2AEB01E9653320081190C /* MikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA91E9653320081190C /* MikiViewController.swift */; };
-		EAA2AEB11E9653320081190C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAA1E9653320081190C /* ViewController.swift */; };
-		EAA2AEB21E9653320081190C /* YukiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAB1E9653320081190C /* YukiViewController.swift */; };
-		EAA2AEB31E9653320081190C /* YuuriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAC1E9653320081190C /* YuuriViewController.swift */; };
+		EAA2AEAD1E9653320081190C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA61E9653320081190C /* CameraViewController.swift */; };
+		EAA2AEB11E9653320081190C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAA1E9653320081190C /* BaseViewController.swift */; };
 		EAA2AEB91E97D2000081190C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEB81E97D2000081190C /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +39,8 @@
 		669760EA1B88B3BD00005A1C /* PhotoGurashiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGurashiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		669760EF1B88B3BD00005A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669760F01B88B3BD00005A1C /* PhotoGurashiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGurashiTests.swift; sourceTree = "<group>"; };
-		EAA2AEA61E9653320081190C /* CommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonViewController.swift; path = ViewController/CommonViewController.swift; sourceTree = "<group>"; };
-		EAA2AEA71E9653320081190C /* KurumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KurumiViewController.swift; path = ViewController/KurumiViewController.swift; sourceTree = "<group>"; };
-		EAA2AEA81E9653320081190C /* MeguneeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeguneeViewController.swift; path = ViewController/MeguneeViewController.swift; sourceTree = "<group>"; };
-		EAA2AEA91E9653320081190C /* MikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MikiViewController.swift; path = ViewController/MikiViewController.swift; sourceTree = "<group>"; };
-		EAA2AEAA1E9653320081190C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
-		EAA2AEAB1E9653320081190C /* YukiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YukiViewController.swift; path = ViewController/YukiViewController.swift; sourceTree = "<group>"; };
-		EAA2AEAC1E9653320081190C /* YuuriViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YuuriViewController.swift; path = ViewController/YuuriViewController.swift; sourceTree = "<group>"; };
+		EAA2AEA61E9653320081190C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ViewController/CameraViewController.swift; sourceTree = "<group>"; };
+		EAA2AEAA1E9653320081190C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		EAA2AEB81E97D2000081190C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = View/CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,13 +129,8 @@
 		EAA2AEA51E9653070081190C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EAA2AEA61E9653320081190C /* CommonViewController.swift */,
-				EAA2AEA71E9653320081190C /* KurumiViewController.swift */,
-				EAA2AEA81E9653320081190C /* MeguneeViewController.swift */,
-				EAA2AEA91E9653320081190C /* MikiViewController.swift */,
-				EAA2AEAA1E9653320081190C /* ViewController.swift */,
-				EAA2AEAB1E9653320081190C /* YukiViewController.swift */,
-				EAA2AEAC1E9653320081190C /* YuuriViewController.swift */,
+				EAA2AEA61E9653320081190C /* CameraViewController.swift */,
+				EAA2AEAA1E9653320081190C /* BaseViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -290,15 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA2AEB11E9653320081190C /* ViewController.swift in Sources */,
-				EAA2AEB31E9653320081190C /* YuuriViewController.swift in Sources */,
+				EAA2AEB11E9653320081190C /* BaseViewController.swift in Sources */,
 				EAA2AEB91E97D2000081190C /* CustomButton.swift in Sources */,
-				EAA2AEB21E9653320081190C /* YukiViewController.swift in Sources */,
-				EAA2AEAE1E9653320081190C /* KurumiViewController.swift in Sources */,
 				669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */,
-				EAA2AEB01E9653320081190C /* MikiViewController.swift in Sources */,
-				EAA2AEAD1E9653320081190C /* CommonViewController.swift in Sources */,
-				EAA2AEAF1E9653320081190C /* MeguneeViewController.swift in Sources */,
+				EAA2AEAD1E9653320081190C /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
