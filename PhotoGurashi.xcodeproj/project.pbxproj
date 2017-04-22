@@ -16,6 +16,7 @@
 		EAA2AEAD1E9653320081190C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA61E9653320081190C /* CameraViewController.swift */; };
 		EAA2AEB11E9653320081190C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAA1E9653320081190C /* BaseViewController.swift */; };
 		EAA2AEB91E97D2000081190C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEB81E97D2000081190C /* CustomButton.swift */; };
+		EAF3A2F51EABD3EC0060C591 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3A2F41EABD3EC0060C591 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EAA2AEA61E9653320081190C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ViewController/CameraViewController.swift; sourceTree = "<group>"; };
 		EAA2AEAA1E9653320081190C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		EAA2AEB81E97D2000081190C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = View/CustomButton.swift; sourceTree = "<group>"; };
+		EAF3A2F41EABD3EC0060C591 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ViewController/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				EAA2AEA61E9653320081190C /* CameraViewController.swift */,
 				EAA2AEAA1E9653320081190C /* BaseViewController.swift */,
+				EAF3A2F41EABD3EC0060C591 /* MainViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				EAA2AEB91E97D2000081190C /* CustomButton.swift in Sources */,
 				669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */,
 				EAA2AEAD1E9653320081190C /* CameraViewController.swift in Sources */,
+				EAF3A2F51EABD3EC0060C591 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
