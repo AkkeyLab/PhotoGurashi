@@ -11,12 +11,16 @@ import UIKit
 class BaseViewController: UIViewController {
 
     fileprivate var topImageView: UIImageView!
-    var topImage: UIImage = UIImage(named: "top_default")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Change top image
+        setBKImage()
+    }
+
+    func setBKImage() {
+        var topImage: UIImage = UIImage(named: "top_default")!
+
         if timeBoolean(0, goalTime: 4) {
             topImage = UIImage(named: "top_darkness")!
         }
@@ -25,12 +29,6 @@ class BaseViewController: UIViewController {
         topImageView.image = topImage
         topImageView.layer.position = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2)
         self.view.addSubview(topImageView)
-    }
-
-    override func onClickButton(_ sender: UIButton) {
-        let controller = CameraViewController()
-        controller.view.backgroundColor = UIColor.white
-        self.present(controller, animated: true, completion: nil)
     }
 
     func timeBoolean(_ startTime: UInt8, goalTime: UInt8) -> Bool {
@@ -48,6 +46,12 @@ class BaseViewController: UIViewController {
             }
         }
         return false
+    }
+
+    override func onClickButton(_ sender: UIButton) {
+        let controller = CameraViewController()
+        controller.view.backgroundColor = UIColor.white
+        self.present(controller, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
