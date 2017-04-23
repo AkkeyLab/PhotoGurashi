@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6618F14A1BE3FA0400B04088 /* AkkeyLabLogoWeb.png in Resources */ = {isa = PBXBuildFile; fileRef = 6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */; };
 		669760DB1B88B3BD00005A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669760DA1B88B3BD00005A1C /* AppDelegate.swift */; };
 		669760E01B88B3BD00005A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669760DE1B88B3BD00005A1C /* Main.storyboard */; };
 		669760E21B88B3BD00005A1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669760E11B88B3BD00005A1C /* Images.xcassets */; };
@@ -16,6 +15,7 @@
 		EAA2AEAD1E9653320081190C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEA61E9653320081190C /* CameraViewController.swift */; };
 		EAA2AEB11E9653320081190C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEAA1E9653320081190C /* BaseViewController.swift */; };
 		EAA2AEB91E97D2000081190C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA2AEB81E97D2000081190C /* CustomButton.swift */; };
+		EADB2EDF1EAC94B6005BC33B /* stairs.png in Resources */ = {isa = PBXBuildFile; fileRef = EADB2EDE1EAC94B6005BC33B /* stairs.png */; };
 		EAF3A2F51EABD3EC0060C591 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF3A2F41EABD3EC0060C591 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AkkeyLabLogoWeb.png; sourceTree = "<group>"; };
 		669760D51B88B3BD00005A1C /* PhotoGurashi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGurashi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669760D91B88B3BD00005A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669760DA1B88B3BD00005A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		EAA2AEA61E9653320081190C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ViewController/CameraViewController.swift; sourceTree = "<group>"; };
 		EAA2AEAA1E9653320081190C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		EAA2AEB81E97D2000081190C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = View/CustomButton.swift; sourceTree = "<group>"; };
+		EADB2EDE1EAC94B6005BC33B /* stairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stairs.png; path = Resources/stairs.png; sourceTree = "<group>"; };
 		EAF3A2F41EABD3EC0060C591 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ViewController/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,18 +64,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6618F1441BE3F99400B04088 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				6618F1491BE3FA0400B04088 /* AkkeyLabLogoWeb.png */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
 		669760CC1B88B3BD00005A1C = {
 			isa = PBXGroup;
 			children = (
-				6618F1441BE3F99400B04088 /* Image */,
 				669760D71B88B3BD00005A1C /* PhotoGurashi */,
 				669760ED1B88B3BD00005A1C /* PhotoGurashiTests */,
 				669760D61B88B3BD00005A1C /* Products */,
@@ -141,6 +132,7 @@
 		EAA2AEB41E96567E0081190C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EADB2EDE1EAC94B6005BC33B /* stairs.png */,
 				669760E11B88B3BD00005A1C /* Images.xcassets */,
 			);
 			name = Resources;
@@ -257,10 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6618F14A1BE3FA0400B04088 /* AkkeyLabLogoWeb.png in Resources */,
 				669760E01B88B3BD00005A1C /* Main.storyboard in Resources */,
 				669760E51B88B3BD00005A1C /* LaunchScreen.xib in Resources */,
 				669760E21B88B3BD00005A1C /* Images.xcassets in Resources */,
+				EADB2EDF1EAC94B6005BC33B /* stairs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,30 +16,18 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AkkeyLabLogoWeb.png" translatesAutoresizingMaskIntoConstraints="NO" id="U5M-ID-Z2X">
-                    <rect key="frame" x="120" y="176" width="240" height="128"/>
-                    <animations/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stairs.png" translatesAutoresizingMaskIntoConstraints="NO" id="U5M-ID-Z2X">
+                    <rect key="frame" x="140" y="140" width="200" height="200"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="Uyh-ud-LxG"/>
-                        <constraint firstAttribute="width" constant="240" id="gcD-Zu-VGF"/>
+                        <constraint firstAttribute="width" secondItem="U5M-ID-Z2X" secondAttribute="height" multiplier="1:1" id="3uz-mb-Yue"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015年 AkkeyLab. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.90057069063186646" green="0.90125507116317749" blue="0.9006766676902771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="U5M-ID-Z2X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="n3S-fh-a4p"/>
-                <constraint firstItem="U5M-ID-Z2X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rJH-P8-1Lr"/>
+                <constraint firstItem="U5M-ID-Z2X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="140" id="UpV-9h-KSp"/>
+                <constraint firstAttribute="trailing" secondItem="U5M-ID-Z2X" secondAttribute="trailing" constant="140" id="rfH-3C-zLn"/>
+                <constraint firstItem="U5M-ID-Z2X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wfb-hl-2QR"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -42,6 +35,6 @@
         </view>
     </objects>
     <resources>
-        <image name="AkkeyLabLogoWeb.png" width="771" height="218"/>
+        <image name="stairs.png" width="1000" height="1000"/>
     </resources>
 </document>
