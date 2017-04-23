@@ -8,26 +8,17 @@
 
 import UIKit
 
-class CustomButton: UIButton {
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-
+extension UIButton {
+    func customSetting(_ vc: UIViewController, title: String) {
         frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         backgroundColor = randomColor()
         layer.masksToBounds = true
         titleLabel?.font = UIFont.systemFont(ofSize: UIFont.buttonFontSize)
         setTitleColor(UIColor.white, for: UIControlState())
         layer.cornerRadius = 40.0
-    }
-
-    func customAddTarget(vc: UIViewController) {
-        addTarget(vc, action: #selector(vc.onClickButton(_:)), for: .touchUpInside)
-    }
-
-    func customSetTitle(title: String) {
         setTitle(title, for: UIControlState())
+
+        addTarget(vc, action: #selector(vc.onClickButton(_:)), for: .touchUpInside)
     }
 
     func randomColor() -> UIColor {

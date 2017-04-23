@@ -14,25 +14,18 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setBKImage()
     }
 
-    func setBKImage() {
+    func setBKImage(_ imageView: UIImageView) {
         var topImage: UIImage = UIImage(named: "top_default")!
-
         if timeBoolean(0, goalTime: 4) {
             topImage = UIImage(named: "top_darkness")!
         }
 
-        topImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
-        topImageView.image = topImage
-        topImageView.layer.position = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2)
-        self.view.addSubview(topImageView)
+        imageView.image = topImage
     }
 
     func timeBoolean(_ startTime: UInt8, goalTime: UInt8) -> Bool {
-        //Get the current date and time
         let now = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ja_JP")
@@ -59,4 +52,3 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
