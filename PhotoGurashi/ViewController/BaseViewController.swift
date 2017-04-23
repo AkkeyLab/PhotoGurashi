@@ -42,9 +42,10 @@ class BaseViewController: UIViewController {
     }
 
     override func onClickButton(_ sender: UIButton) {
-        let controller = CameraViewController()
-        controller.view.backgroundColor = UIColor.white
-        self.present(controller, animated: true, completion: nil)
+        let vc = CameraViewController()
+        vc.view.backgroundColor = UIColor.white
+        vc.setCharaImage("stamp_yuki")
+        self.present(vc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
