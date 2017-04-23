@@ -48,7 +48,7 @@ class CameraViewController: UIViewController {
         charaSize = CGRect(x: 0, y: 0, width: (screenWidth / 2) + (screenWidth / 4), height: (screenHeight / 2) + (screenHeight / 4))
         charaPosition = CGPoint(x: (screenWidth / 2) + (screenWidth / 8), y: (screenHeight / 2) + (screenHeight / 8))
 
-        charaImage = UIImage(named: "stamp_yuki") // Default
+        charaImage = UIImage(named: "04") // Default
     }
 
     func setParts() {
