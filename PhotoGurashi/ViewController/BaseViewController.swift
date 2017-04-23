@@ -44,7 +44,7 @@ class BaseViewController: UIViewController {
     override func onClickButton(_ sender: UIButton) {
         let vc = CameraViewController()
         vc.view.backgroundColor = UIColor.white
-        vc.setCharaImage("stamp_yuki")
+        vc.setCharaImage("04")
         self.present(vc, animated: true, completion: nil)
     }
 
