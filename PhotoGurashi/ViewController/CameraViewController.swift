@@ -62,7 +62,7 @@ class CameraViewController: UIViewController {
         cameraButton.frame = CGRect(x: 0, y: 0, width: 120, height: 50)
         cameraButton.backgroundColor = .red
         cameraButton.layer.masksToBounds = true
-        cameraButton.setTitle("撮影", for: UIControlState())
+        cameraButton.setTitle("撮影", for: UIControl.State())
         cameraButton.layer.cornerRadius = 20.0
         cameraButton.layer.position = CGPoint(x: screenWidth / 2, y: screenHeight - 50)
         cameraButton.addTarget(self, action: #selector(CameraViewController.onClickButton(_:)), for: .touchUpInside)
@@ -72,9 +72,9 @@ class CameraViewController: UIViewController {
         exitButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         exitButton.backgroundColor = .cyan
         exitButton.layer.masksToBounds = true
-        exitButton.setTitle("戻る", for: UIControlState())
+        exitButton.setTitle("戻る", for: UIControl.State())
         exitButton.titleLabel?.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        exitButton.setTitleColor(UIColor.darkGray, for: UIControlState())
+        exitButton.setTitleColor(UIColor.darkGray, for: UIControl.State())
         exitButton.layer.cornerRadius = 10.0
         exitButton.layer.position = CGPoint(x: 50, y: screenHeight - 50)
         exitButton.addTarget(self, action: #selector(CameraViewController.onClickButton(_:)), for: .touchUpInside)
@@ -84,9 +84,9 @@ class CameraViewController: UIViewController {
         changeCameraButton.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         changeCameraButton.backgroundColor = .gray
         changeCameraButton.layer.masksToBounds = true
-        changeCameraButton.setTitle("変更", for: UIControlState())
+        changeCameraButton.setTitle("変更", for: UIControl.State())
         changeCameraButton.titleLabel?.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        changeCameraButton.setTitleColor(UIColor.white, for: UIControlState())
+        changeCameraButton.setTitleColor(UIColor.white, for: UIControl.State())
         changeCameraButton.layer.cornerRadius = 25.0
         changeCameraButton.layer.position = CGPoint(x: self.view.bounds.width - 50, y: 50)
         changeCameraButton.addTarget(self, action: #selector(CameraViewController.onClickButton(_:)), for: .touchUpInside)
@@ -101,7 +101,7 @@ class CameraViewController: UIViewController {
         }
     }
 
-    override func onClickButton(_ sender: UIButton) {
+    @objc override func onClickButton(_ sender: UIButton) {
         switch sender.tag {
         case 0:
             outputPhoto()
@@ -120,16 +120,18 @@ class CameraViewController: UIViewController {
         imageOutput = AVCaptureStillImageOutput()
         cameraSession.addOutput(imageOutput)
 
-        do {
-            let videoInput: AVCaptureInput = try AVCaptureDeviceInput.init(device: setDevice(cameraInfo))
-            cameraSession.addInput(videoInput)
-        } catch {
-            NSLog("AVCaptureInput get error")
+        if let device = setDevice(cameraInfo) {
+            do {
+                let videoInput: AVCaptureInput = try AVCaptureDeviceInput(device: device)
+                cameraSession.addInput(videoInput)
+            } catch {
+                NSLog("AVCaptureInput get error")
+            }
         }
 
         let videoLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer.init(session: cameraSession)
         videoLayer.frame = self.view.bounds
-        videoLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         view.layer.addSublayer(videoLayer)
 
         cameraSession.startRunning()
@@ -144,11 +146,13 @@ class CameraViewController: UIViewController {
             cameraInfo = .back
         }
 
-        do {
-            let videoInput: AVCaptureInput = try AVCaptureDeviceInput.init(device: setDevice(cameraInfo))
-            cameraSession.addInput(videoInput)
-        } catch {
-            NSLog("AVCaptureInput get error")
+        if let device = setDevice(cameraInfo) {
+            do {
+                let videoInput: AVCaptureInput = try AVCaptureDeviceInput(device: device)
+                cameraSession.addInput(videoInput)
+            } catch {
+                NSLog("AVCaptureInput get error")
+            }
         }
 
         cameraSession.startRunning()
@@ -156,7 +160,7 @@ class CameraViewController: UIViewController {
 
     func setDevice(_ direction: CameraDirection) -> AVCaptureDevice? {
         let devices = AVCaptureDevice.devices()
-        for device in devices! {
+        for device in devices {
             if cameraInfo == .back {
                 if (device as AnyObject).position == .back {
                     return device as? AVCaptureDevice
@@ -171,11 +175,12 @@ class CameraViewController: UIViewController {
     }
 
     func outputPhoto() {
-        let videoConnection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
+        guard let videoConnection = imageOutput.connection(with: AVMediaType.video) else { return }
         imageOutput.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (imageDataBuffer, error) -> Void in
+            guard let buffer = imageDataBuffer else { return }
             // Convert DataBuffer of the acquired Image to Jpeg.
-            let imageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-            let image: UIImage = UIImage(data: imageData)!
+            guard let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(buffer),
+                let image: UIImage = UIImage(data: imageData) else { return }
 
             // Edit image
             UIGraphicsBeginImageContext(CGSize(width: image.size.width, height: image.size.height))

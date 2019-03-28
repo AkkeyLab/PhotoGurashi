@@ -14,9 +14,9 @@ extension UIButton {
         backgroundColor = randomColor()
         layer.masksToBounds = true
         titleLabel?.font = UIFont.systemFont(ofSize: UIFont.buttonFontSize)
-        setTitleColor(UIColor.white, for: UIControlState())
+        setTitleColor(UIColor.white, for: UIControl.State())
         layer.cornerRadius = 40.0
-        setTitle(title, for: UIControlState())
+        setTitle(title, for: UIControl.State())
 
         addTarget(vc, action: #selector(vc.onClickButton(_:)), for: .touchUpInside)
     }
@@ -34,5 +34,5 @@ extension UIButton {
 }
 
 extension UIViewController {
-    func onClickButton(_ sender: UIButton) { }
-}
+    @objc func onClickButton(_ sender: UIButton) { }
+} 
