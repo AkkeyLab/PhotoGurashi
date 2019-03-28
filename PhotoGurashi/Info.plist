@@ -24,7 +24,7 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>カメラ撮影に使用します</string>
-	<key>NSPhotoLibraryUsageDescription</key>
+	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>写真の保存に使用します</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
